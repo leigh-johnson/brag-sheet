@@ -34,7 +34,7 @@
 			<a class="logo" href="<?php echo base_url(); ?>" title="<?php site_description(); ?>">
 				<h1><?php echo site_name(); ?></h1>
 				<img src="http://placehold.it/350x150"></img>
-				</a>
+			</a>
 			
 
 			<!-- drawer -->

@@ -28,14 +28,20 @@ body:before {
   background-image: -webkit-radial-gradient(#72b9bf, #bfba72, #72a3bf, #7273bf);
   background-image: radial-gradient(  #72b9bf, #bfba72, #72a3bf, #7273bf); }
 
+header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(225, 255, 255, 0.2);
+  height: 175px;
+  font-size: 2em; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .logo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
   background-color: red; }
-  .logo:last-child {
-    margin-right: 0; }
 
 #toggle {
   position: relative;
@@ -74,20 +80,28 @@ body:before {
   transform: rotate(-45deg) translate(7px, -8px); }
 
 #menu {
-  position: relative;
+  display: none;
   height: auto;
   background: #72a3bf;
   font-size: 1em;
-  display: none;
   border-radius: 3px;
   margin-top: -45px;
   float: left;
-  display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
   margin-left: 25.58941%; }
   #menu:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    #menu {
+      font-size: 1.2em;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%;
+      margin-top: -200px; }
+      #menu:last-child {
+        margin-right: 0; } }
 
 #menu ul {
   list-style: none; }
@@ -96,6 +110,9 @@ body:before {
   width: 100%;
   text-align: center;
   padding: 10px; }
+  @media screen and (max-width: 500px) {
+    #menu ul li {
+      padding: 0; } }
 
 #menu ul li a {
   display: block;
@@ -104,6 +121,10 @@ body:before {
   color: white;
   padding: 10px;
   margin-bottom: 1px; }
+  @media screen and (max-width: 500px) {
+    #menu ul li a {
+      height: 50px;
+      padding: 10px; } }
 
 #menu ul li a:visited {
   text-decoration: none; }
@@ -158,16 +179,4 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #444; }
-
-header {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(225, 255, 255, 0.2);
-  height: 200px;
-  font-size: 2em; }
-  header:after {
-    content: "";
-    display: table;
-    clear: both; }
+  background: #1e1e1e; }

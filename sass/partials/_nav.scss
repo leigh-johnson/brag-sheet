@@ -1,9 +1,13 @@
 // The navigation menu styles
 
-
+header {
+	@include outer-container();
+	background-color: rgba(225, 255, 255, 0.2);
+	height: 175px;
+	font-size: 2em;
+}
 
 .logo{
-	@include span-columns(6);
 	background-color: red;
 }
 #toggle {
@@ -46,16 +50,19 @@
 
 // The height of this container adjusts based on nav elements inside
 #menu {
-	position: relative;
+	display: none;
 	height: auto;
 	background: $light-blue;
 	font-size: 1em;
-	display: none;
 	border-radius: 3px;
 	@include margin(-45px null null null);
-	@include span-columns(3);
+	@include span-columns(3, $display: no-display);
 	@include shift(3);
 	@include media($mobile){
+		font-size: 1.2em;
+		@include span-columns(4, $display: no-display);
+		@include shift(0);
+		@include margin(-200px null null null)
 	}
 }
 
@@ -67,6 +74,9 @@
 	width: 100%;
 	text-align: center;
 	padding: 10px;
+	@include media($mobile){
+		padding: 0
+		}
 }
 #menu ul li a {
 	display: block;
@@ -75,6 +85,10 @@
 	color: white;
 	padding: 10px;
 	margin-bottom: 1px;
+	@include media($mobile){
+		height:50px;
+		padding: 10px;
+		}
 
 }
 
