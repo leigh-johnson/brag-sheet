@@ -1,0 +1,12 @@
+body {
+	background: #444;
+}
+
+header {
+	@include outer-container();
+	background-color: rgba(225, 255, 255, 0.2);
+	height: 200px;
+	font-size: 2em;
+}
+// Grid system
+

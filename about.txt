@@ -1,0 +1,5 @@
+Theme name:     Brag Sheet
+Description:    A theme for designers & artists
+Author name:    Leigh Johnson // Nuwen
+Author site:    http://leighjohnson.me
+License:        http://licence.visualidiot.com

@@ -1,0 +1,17 @@
+//Breakpoints
+$mobile: new-breakpoint(max-width 500px 4);
+
+
+
+// Some pretty color samples
+
+//Sky palette
+
+$light-green: rgb(114, 185, 191);
+$light-yellow: rgb(191, 186, 114);
+$light-blue: rgb(114, 163, 191);
+$light-purple: rgb(114, 115, 191);
+
+.blue-background {
+	@include radial-gradient($light-green, $light-yellow, $light-blue, $light-purple);
+}
