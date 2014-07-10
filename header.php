@@ -31,11 +31,6 @@
 				<div id="bar3"></div>
 			</div>
 			
-			<a class="logo" href="<?php echo base_url(); ?>" title="<?php site_description(); ?>">
-				<h1><?php echo site_name(); ?></h1>
-				<img src="http://placehold.it/350x150"></img>
-			</a>
-			
 
 			<!-- drawer -->
 			<div id="menu">
@@ -49,10 +44,14 @@
 			        <?php endwhile; ?>
 			    </ul>
 			    
-			<?php endif; ?>
-			
+					<?php endif; ?>
 			</div>
 			<!-- end drawer -->
+
+		<a class="logo" href="<?php echo base_url(); ?>" title="<?php site_description(); ?>">
+				<h1><?php echo site_name(); ?></h1>
+				
+		</a>
 		</header>
 		<script type="text/javascript">
 		$("#toggle").click(function() {

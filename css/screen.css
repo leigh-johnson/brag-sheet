@@ -28,33 +28,74 @@ body:before {
   background-image: -webkit-radial-gradient(#72b9bf, #bfba72, #72a3bf, #7273bf);
   background-image: radial-gradient(  #72b9bf, #bfba72, #72a3bf, #7273bf); }
 
+#menu ul li a, .social-container, .skills-aside, .skills-content, .skills-subcontent {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.logo, .social-icon, .skills-aside, .skills-content, .skills-subcontent {
+  background-repeat: no-repeat;
+  background-position: center, 0% 0%;
+  background-size: 100%, 100%, 100% 100%; }
+
 header {
+  display: block;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(225, 255, 255, 0.2);
-  height: 175px;
-  font-size: 2em; }
+  height: 175px; }
   header:after {
     content: "";
     display: table;
     clear: both; }
 
 .logo {
-  background-color: red; }
+  display: block;
+  margin: 0 auto;
+  background-image: url("$header-logo");
+  background-image: url("$header-logo");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%;
+  margin-top: 35px; }
+  .logo:last-child {
+    margin-right: 0; }
+
+.logo h1 {
+  line-height: 150%;
+  font-size: 1.7em;
+  clear: both;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 8.5298%; }
+  .logo h1:last-child {
+    margin-right: 0; }
+
+.logo a, .logo a:visited {
+  text-decoration: none; }
 
 #toggle {
-  position: relative;
+  position: fixed;
   z-index: 9999;
-  width: 28px;
-  height: 30px;
+  width: 1em;
+  height: 1em;
   margin-top: 10px;
   margin-right: 15px;
   margin-bottom: 5px;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 4.46619%;
+  width: 6.17215%;
   margin-left: 93.82785%; }
   #toggle:last-child {
     margin-right: 0; }
@@ -80,16 +121,17 @@ header {
   transform: rotate(-45deg) translate(7px, -8px); }
 
 #menu {
+  position: absolute;
   display: none;
   height: auto;
   background: #72a3bf;
   font-size: 1em;
   border-radius: 3px;
-  margin-top: -45px;
+  margin-top: 5px;
   float: left;
   margin-right: 2.35765%;
   width: 23.23176%;
-  margin-left: 25.58941%; }
+  margin-left: 76.76824%; }
   #menu:last-child {
     margin-right: 0; }
   @media screen and (max-width: 500px) {
@@ -98,13 +140,13 @@ header {
       float: left;
       margin-right: 7.42297%;
       width: 100%;
-      margin-left: 0%;
-      margin-top: -200px; }
+      margin-left: 0%; }
       #menu:last-child {
         margin-right: 0; } }
 
 #menu ul {
-  list-style: none; }
+  list-style: none;
+  margin-top: 80px; }
 
 #menu ul li {
   width: 100%;
@@ -179,4 +221,72 @@ table {
   border-spacing: 0; }
 
 body {
+  margin: 0 0 80px; }
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #72b9bf; }
+
+.social-container {
+  float: right; }
+
+.social-icon {
+  float: left;
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  margin-right: 0.5em;
+  background-image: url("http://placehold.it/50x50");
+  background-image: url("http://placehold.it/50x50"); }
+
+body {
   background: #1e1e1e; }
+
+.skills-container {
+  padding: 1em;
+  height: 25em;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .skills-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.skills-aside {
+  height: 90%;
+  background-image: url("http://placehold.it/300x200");
+  background-image: url("http://placehold.it/300x200");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .skills-aside:last-child {
+    margin-right: 0; }
+
+.skills-content {
+  height: 90%;
+  padding: 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .skills-content:last-child {
+    margin-right: 0; }
+
+.skills-subcontent {
+  margin: 0 auto;
+  height: 100%;
+  padding: 1em;
+  background-image: url("http://placehold.it/200x300");
+  background-image: url("http://placehold.it/200x300");
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 48.21067%; }
+  .skills-subcontent:last-child {
+    margin-right: 0; }

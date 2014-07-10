@@ -18,3 +18,5 @@
 * Sass
 * Bourbon & Neat
 * Please.JS - a color generator based on the golden ratio
+
+#### To-do:

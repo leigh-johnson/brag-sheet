@@ -1,0 +1,28 @@
+
+body {
+	//footer height
+	margin: 0 0 80px;	
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 80px;
+	width: 100%;
+	background-color: $light-green;
+}
+
+.social-container{
+	@extend %vertical-align;
+	float: right;
+}
+.social-icon{
+	@extend %pretty-bg;
+	float: left;
+	height: 50px;
+	width: 50px;
+	padding: 3px;
+	@include margin(null 0.5em null null);
+	@include background-image(url("http://placehold.it/50x50"));
+}

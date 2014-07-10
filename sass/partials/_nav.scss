@@ -1,23 +1,44 @@
 // The navigation menu styles
+// Rename this to header.scss to match Anchor's nomenclature
 
 header {
+	display: block;
 	@include outer-container();
 	background-color: rgba(225, 255, 255, 0.2);
-	height: 175px;
-	font-size: 2em;
-}
+	height: 175px;}
 
 .logo{
-	background-color: red;
+	@extend %pretty-bg;
+	display: block;
+	margin: 0 auto;
+	@include background-image(url("$header-logo"));
+	@include span-columns(4);
+	@include shift(4);
+	@include margin(35px null null null);
+}
+
+.logo h1 {
+	line-height: 150%;
+	font-size: 1.7em;
+	clear: both;
+	text-align: center;
+	@include margin(10px null null 10px);
+	@include span-columns(2);
+	@include shift(1);
+}
+
+.logo a, .logo a:visited {;
+	text-decoration: none;
 }
 #toggle {
-	position: relative;
+	position: fixed;
 	z-index: 9999;
-	width: 28px;
-	height: 30px;
+	width: 1em;
+	height: 1em;
 	@include margin(10px 15px 5px null);
-	@include span-columns(0.8);
+	@include span-columns(1);
 	@include shift(11);
+
 
 }
 
@@ -50,24 +71,26 @@ header {
 
 // The height of this container adjusts based on nav elements inside
 #menu {
+	position: absolute;
 	display: none;
 	height: auto;
 	background: $light-blue;
 	font-size: 1em;
 	border-radius: 3px;
-	@include margin(-45px null null null);
+	@include margin(5px null null null);
 	@include span-columns(3, $display: no-display);
-	@include shift(3);
+	@include shift(9);
 	@include media($mobile){
 		font-size: 1.2em;
 		@include span-columns(4, $display: no-display);
 		@include shift(0);
-		@include margin(-200px null null null)
+		@include margin(null null null null)
 	}
 }
 
 #menu ul {
 	list-style: none;
+	@include margin(80px null null null);
 }
 
 #menu ul li {
@@ -79,6 +102,7 @@ header {
 		}
 }
 #menu ul li a {
+	@extend %vertical-align;
 	display: block;
 	text-decoration: none;
 	background: rgba(0, 0, 0, 0.3);

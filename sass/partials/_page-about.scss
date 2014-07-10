@@ -1,0 +1,34 @@
+// Styles affecting page-about.php
+
+.skills-container {
+	padding: 1em;
+	height: 25em;
+	@include outer-container;
+}
+
+.skills-aside {
+	@extend %pretty-bg;
+	@extend %vertical-align;
+	height: 90%;
+	@include background-image(url($aside-img));
+	@include span-columns(3);
+
+}
+
+.skills-content {
+	@extend %pretty-bg;
+	@extend %vertical-align;
+	height: 90%;
+	padding: 0;
+	@include span-columns(8);
+}
+.skills-subcontent {
+	@extend %pretty-bg;
+	@extend %vertical-align;
+	margin: 0 auto;
+	height: 100%;
+	padding: 1em;
+
+	@include background-image(url("http://placehold.it/200x300"));
+	@include span-columns(4 of 8);
+}

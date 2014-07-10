@@ -15,3 +15,29 @@ $light-purple: rgb(114, 115, 191);
 .blue-background {
 	@include radial-gradient($light-green, $light-yellow, $light-blue, $light-purple);
 }
+
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+%pretty-bg {
+	background-repeat: no-repeat;
+	background-position: center, 0% 0%;
+  	background-size: 100%, 100%, 100% 100%;
+}
+
+@mixin center() {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+//header.php
+$header-logo: "http://placehold.it/300x150";
+
+//page-about.php
+$aside-img: "http://placehold.it/300x200";

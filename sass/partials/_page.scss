@@ -1,0 +1,16 @@
+// Where the wild pages live
+
+.nesting-container {
+	@include outer-container;
+}
+
+.aside {
+	@include span-columns(4);
+}
+
+.sup-content {
+	@include span-columns(8);
+}
+.sub-content {
+	@include span columns(4 of 8);
+}

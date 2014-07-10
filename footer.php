@@ -1,5 +1,19 @@
 		<footer>
-        	<a href="http://anchorcms.com" title="Powered by Anchor CMS">Anchor CMS</a>
+        	<a href="http://leighjohnson.me" title="Powered by Leigh">Leigh Johnson - Designer & Developer</a>
+        	<div class="social-container">
+        		<div class="social-icon">
+        		</div>
+        		<div class="social-icon">
+        		</div>
+        		<div class="social-icon">
+        		</div>
+        		<div class="social-icon">
+        		</div>
+        		<div class="social-icon">
+        		</div>
+        		<div class="social-icon">
+        		</div>
+        	</div>
 		</footer>
 	</body>
 </html>
