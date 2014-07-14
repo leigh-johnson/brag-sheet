@@ -1,5 +1,6 @@
 <?php theme_include('header'); ?>
-
+	
+	<!-- Source credit: http://tympanus.net/codrops/2013/07/18/on-scroll-effect-layout/ -->
 	<div id="so-scroller" class="so-scroller">
 				<section class="so-section">
 					<article class="so-side so-side-left">

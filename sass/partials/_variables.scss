@@ -41,3 +41,9 @@ $header-logo: "http://placehold.it/300x150";
 
 //page-about.php
 $aside-img: "http://placehold.it/300x200";
+
+// placeholders
+
+.placeholder-250 {
+  @include background-image(url("http://placehold.it/250x250"));
+}

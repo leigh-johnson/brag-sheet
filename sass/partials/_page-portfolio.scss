@@ -1,0 +1,28 @@
+.placeholder-250 {
+	width: 250px;
+	height: 250px;
+	margin: 1em;
+}
+
+.yellow {
+	background: $light-yellow;
+}
+.blue {
+	background: $light-blue;
+}
+.green {
+	background: $light-green;
+}
+
+#portfolio-container .mix {
+	display: none;
+}
+
+.button {
+	@include button;
+}
+
+#portfolio-container img {
+	@extend %vertical-align;
+	@include margin(null 10px null 10px);
+}
