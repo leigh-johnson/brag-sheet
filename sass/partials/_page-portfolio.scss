@@ -1,7 +1,14 @@
-.placeholder-250 {
-	width: 250px;
-	height: 250px;
-	margin: 1em;
+.placeholder-275 {
+	width: 275px;
+	height: 275px;
+	float: left;
+	@include margin(10px 10px null null);
+}
+
+//Necessary for MixItUp transitions
+
+.portfolio-item {
+	display: none;
 }
 
 .yellow {
@@ -14,15 +21,36 @@
 	background: $light-green;
 }
 
-#portfolio-container .mix {
-	display: none;
+#portfolio-container {
+	display: block;
+	margin: 0 auto;
+	width: 85%;
+	background: rgba(225, 255, 255, 0.2);
 }
 
-.button {
-	@include button;
-}
-
-#portfolio-container img {
+.portfolio-item img {
 	@extend %vertical-align;
-	@include margin(null 10px null 10px);
+	display: block;
+	margin: 0 auto;
+}
+
+.portfolio-item figure {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+}
+.portfolio-item figcaption {
+	opacity: 0;
+	position: absolute;
+	color: #fff;
+	background: rgba(225, 255, 255, 0.2);
+	bottom: 0;
+	left: -30%;
+	@include transition (all 2.0s ease-in-out);
+}
+
+.portfolio-item figure:hover figcaption {
+	opacity: 1;
+	left: 0;
 }

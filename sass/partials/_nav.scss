@@ -4,7 +4,6 @@
 header {
 	display: block;
 	@include outer-container();
-	background-color: rgba(225, 255, 255, 0.2);
 	height: 175px;}
 
 .logo{
@@ -33,10 +32,10 @@ header {
 #toggle {
 	position: fixed;
 	z-index: 9999;
-	width: 1em;
-	height: 1em;
+	width: 45px;
+	height: 45px;
 	@include margin(20px 15px 5px null);
-	@include span-columns(1);
+	@include span-columns(.92);
 	@include shift(0.1);
 
 
@@ -75,18 +74,15 @@ header {
 	position: fixed;
 	display: none;
 	height: auto;
+	width: 250px;
 	background: $light-blue;
 	font-size: 1em;
 	border-radius: 3px;
 	margin: 0;
-	@include span-columns(3, $display: no-display);
-	@include shift(0);
 	@include media($mobile){
+		width: 100%;
 		margin: 0;
-		font-size: 1.2em;
-		@include span-columns(4, $display: no-display);
-		@include shift(0);
-		
+		font-size: 1.2em;		
 	}
 }
 

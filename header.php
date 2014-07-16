@@ -10,8 +10,8 @@
 		
 		<link href="<?php echo theme_url('css/screen.css'); ?>"  rel="stylesheet" media="screen" type="text/css" />
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.ico'); ?>" type="image/x-icon" />
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="<?php echo theme_url('js/modernizr.custom.js'); ?>"></script>
+ 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>		
+ 		<script src="<?php echo theme_url('js/modernizr.custom.js'); ?>"></script>
 		<!-- Add per-post CSS -->
 		<?php if(article_css()): ?>
 			<style><?php echo article_css(); ?></style>
