@@ -1,9 +1,15 @@
-
-
-footer {
-	display: block;
-	height: 300px;
-	width: 100%;
+* { box-sizing:border-box; }
+html, body { 
+	margin-bottom: 200px;
+	 }
+footer { 
+	position: fixed;
+	bottom:0;
+	z-index: -1;
+	height:200px;
+	width:100%;
 	background: $light-yellow;
 }
+
+
 

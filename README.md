@@ -16,6 +16,7 @@
 #### Extra slaw
 * Sass
 * Bourbon & Neat
+* Sophisticated hover effects
 * Please.JS - a color generator based on the golden ratio
 * MixItUp jQuery plugin
 
@@ -27,3 +28,4 @@
 
 #### To-do
 * Documentation
+* Make SCSS sheets modular, so extra styles aren't being loaded unnecessarily
