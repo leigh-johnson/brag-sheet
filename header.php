@@ -25,38 +25,17 @@
 	</head>
 
 	<body>
+	<main class="cd-main-content">
 		<header>
-			<div id="toggle"> <!-- animated bar container-->
-				<div id="bar1"></div>
-				<div id="bar2"></div>
-				<div id="bar3"></div>
-			</div>
-			
-
-			<!-- drawer -->
-			<div id="menu">
-				<!-- Search Menu -->
-				<?php if(has_menu_items()) : ?>
-			    <ul role="main"><!-- Pages Roll -->
-			        <?php while(menu_items()) : ?>
-			            <li><a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
-			        <?php endwhile; ?>
-			        <li><form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">
-	      			</form></li>
-			    </ul>
-			    
-					<?php endif; ?>
-			</div>
-			<!-- end drawer -->
-
-		<a class="logo" href="<?php echo base_url(); ?>" title="<?php site_description(); ?>">
-				<h1><?php echo site_name(); ?></h1>
-				
-		</a>
+			<a id="cd-logo" href="#0"><img src="http://placehold.it/200x50" alt="Homepage"></a>
+			<nav id="cd-top-nav">
+				<ul>
+					<li><a href="#0">Link!</a></li>
+					<li><a href="#0">Login?</a></li>
+				</ul>
+			</nav>
+			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</header>
-		<script type="text/javascript">
-		$("#toggle").click(function() {
-  		$(this).toggleClass("on");
-  		$("#menu").slideToggle();
-		});</script>
+
+		<!-- put your content here -->
 

@@ -1,9 +1,9 @@
+// The organization of this file is shameful. Clean it up, there are PEOPLE watching.
+
 //Breakpoints
 $mobile: new-breakpoint(max-width 500px 4);
 
-
-
-// Some pretty color samples
+// variables - colors
 
 //Sky palette
 
@@ -11,6 +11,30 @@ $light-green: rgb(114, 185, 191);
 $light-yellow: rgb(191, 186, 114);
 $light-blue: rgb(114, 163, 191);
 $light-purple: rgb(114, 115, 191);
+
+$main-text: #fff; // main text
+$link: #6cac70; // anchor tags
+$background: $light-purple; // body background color
+
+$color-1: $light-blue; // green dark
+$color-2: #2C3E50; // green darker
+$color-3: #59ABE3; // green light
+
+// variables - fonts 
+
+$primary-font: 'Titillium Web', sans-serif;
+
+// variables - z-index 
+
+$content-zindex: 2;
+$secondary-nav: 1;
+
+// variables - header height 
+
+$header-S: 50px;
+$header-M: 70px;
+
+// Some pretty color samples
 
 .blue-background {
 	@include radial-gradient($light-green, $light-yellow, $light-blue, $light-purple);
@@ -31,10 +55,6 @@ $light-purple: rgb(114, 115, 191);
   	background-size: 100%, 100%, 100% 100%;
 }
 
-@mixin center() {
-	margin-left: auto;
-	margin-right: auto;
-}
 
 //header.php
 $header-logo: "http://placehold.it/300x150";

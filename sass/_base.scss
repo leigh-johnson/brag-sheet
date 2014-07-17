@@ -1,8 +1,34 @@
+// Any value prefixed with $, eg $color can be changed in _variables.scss
+
+*, *:after, *:before {
+	@include box-sizing(border-box);
+}
+
 body, html {
 	margin:0;
 	padding:0;
 	height:100%; 
-	background: $light-purple;
+}
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+a {
+	color: $link;
+	text-decoration: none;
+}
+body {
+	font: {
+		size: 100%;
+		family: $primary-font;
+	}
+	color: $main-text;
+	position: relative;
+	background-color: $background;
 }
 
 
