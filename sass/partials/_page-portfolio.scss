@@ -1,14 +1,21 @@
-.placeholder-275 {
+%placeholder-275 {
 	width: 275px;
 	height: 275px;
-	float: left;
+	//float: left;
 	@include margin(10px 10px null null);
 }
 
 //Necessary for MixItUp transitions
 
 .portfolio-item {
+	@extend %placeholder-275;
 	display: none;
+	@include span-columns(3);
+	@include omega(4n);
+	@include media($mobile){
+		@include span-columns(4);
+		@include omega
+	}
 }
 
 .yellow {
@@ -22,10 +29,10 @@
 }
 
 #portfolio-container {
-	display: block;
 	margin: 0 auto;
-	width: 85%;
-	background: rgba(225, 255, 255, 0.2);
+	width: 100%;
+	margin-bottom: 95px;
+	@include outer-container;
 }
 
 .portfolio-item img {

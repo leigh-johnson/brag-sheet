@@ -1,8 +1,8 @@
 @import "bourbon/bourbon";
-//$visual-grid: true;
-//$visual-grid-color: rgb(191, 186, 114);
-//$visual-grid-index: front;
-//$visual-grid-opacity: 0.1;
+$visual-grid: true;
+$visual-grid-color: rgb(191, 186, 114);
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
 @import "neat/neat";
 
 @import "partials/variables";
@@ -14,6 +14,6 @@
 @import "partials/header";
 @import "partials/reset";
 @import "base";
-//@import "partials/footer";
+@import "partials/footer";
 @import "partials/page-about";
 @import "partials/page-portfolio";

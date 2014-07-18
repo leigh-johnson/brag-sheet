@@ -1,11 +1,12 @@
 
 footer { 
-	position: fixed;
-	bottom:0;
-	z-index: -1;
-	height:200px;
-	width:100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 80px;
+	width: 100%;
 	background: $light-yellow;
+	@include clearfix;
 }
 
 

@@ -3,6 +3,26 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, #bfba72 0, #bfba72 6.17215%, transparent 6.17215%, transparent 8.5298%, #bfba72 8.5298%, #bfba72 14.70196%, transparent 14.70196%, transparent 17.05961%, #bfba72 17.05961%, #bfba72 23.23176%, transparent 23.23176%, transparent 25.58941%, #bfba72 25.58941%, #bfba72 31.76157%, transparent 31.76157%, transparent 34.11922%, #bfba72 34.11922%, #bfba72 40.29137%, transparent 40.29137%, transparent 42.64902%, #bfba72 42.64902%, #bfba72 48.82117%, transparent 48.82117%, transparent 51.17883%, #bfba72 51.17883%, #bfba72 57.35098%, transparent 57.35098%, transparent 59.70863%, #bfba72 59.70863%, #bfba72 65.88078%, transparent 65.88078%, transparent 68.23843%, #bfba72 68.23843%, #bfba72 74.41059%, transparent 74.41059%, transparent 76.76824%, #bfba72 76.76824%, #bfba72 82.94039%, transparent 82.94039%, transparent 85.29804%, #bfba72 85.29804%, #bfba72 91.4702%, transparent 91.4702%, transparent 93.82785%, #bfba72 93.82785%, #bfba72 100.0%, transparent 100.0%);
+  background-image: -webkit-linear-gradient(left, transparent 0, #bfba72 0, #bfba72 6.17215%, transparent 6.17215%, transparent 8.5298%, #bfba72 8.5298%, #bfba72 14.70196%, transparent 14.70196%, transparent 17.05961%, #bfba72 17.05961%, #bfba72 23.23176%, transparent 23.23176%, transparent 25.58941%, #bfba72 25.58941%, #bfba72 31.76157%, transparent 31.76157%, transparent 34.11922%, #bfba72 34.11922%, #bfba72 40.29137%, transparent 40.29137%, transparent 42.64902%, #bfba72 42.64902%, #bfba72 48.82117%, transparent 48.82117%, transparent 51.17883%, #bfba72 51.17883%, #bfba72 57.35098%, transparent 57.35098%, transparent 59.70863%, #bfba72 59.70863%, #bfba72 65.88078%, transparent 65.88078%, transparent 68.23843%, #bfba72 68.23843%, #bfba72 74.41059%, transparent 74.41059%, transparent 76.76824%, #bfba72 76.76824%, #bfba72 82.94039%, transparent 82.94039%, transparent 85.29804%, #bfba72 85.29804%, #bfba72 91.4702%, transparent 91.4702%, transparent 93.82785%, #bfba72 93.82785%, #bfba72 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, #bfba72 0, #bfba72 6.17215%, transparent 6.17215%, transparent 8.5298%, #bfba72 8.5298%, #bfba72 14.70196%, transparent 14.70196%, transparent 17.05961%, #bfba72 17.05961%, #bfba72 23.23176%, transparent 23.23176%, transparent 25.58941%, #bfba72 25.58941%, #bfba72 31.76157%, transparent 31.76157%, transparent 34.11922%, #bfba72 34.11922%, #bfba72 40.29137%, transparent 40.29137%, transparent 42.64902%, #bfba72 42.64902%, #bfba72 48.82117%, transparent 48.82117%, transparent 51.17883%, #bfba72 51.17883%, #bfba72 57.35098%, transparent 57.35098%, transparent 59.70863%, #bfba72 59.70863%, #bfba72 65.88078%, transparent 65.88078%, transparent 68.23843%, #bfba72 68.23843%, #bfba72 74.41059%, transparent 74.41059%, transparent 76.76824%, #bfba72 76.76824%, #bfba72 82.94039%, transparent 82.94039%, transparent 85.29804%, #bfba72 85.29804%, #bfba72 91.4702%, transparent 91.4702%, transparent 93.82785%, #bfba72 93.82785%, #bfba72 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, #bfba72 0, #bfba72 6.17215%, transparent 6.17215%, transparent 8.5298%, #bfba72 8.5298%, #bfba72 14.70196%, transparent 14.70196%, transparent 17.05961%, #bfba72 17.05961%, #bfba72 23.23176%, transparent 23.23176%, transparent 25.58941%, #bfba72 25.58941%, #bfba72 31.76157%, transparent 31.76157%, transparent 34.11922%, #bfba72 34.11922%, #bfba72 40.29137%, transparent 40.29137%, transparent 42.64902%, #bfba72 42.64902%, #bfba72 48.82117%, transparent 48.82117%, transparent 51.17883%, #bfba72 51.17883%, #bfba72 57.35098%, transparent 57.35098%, transparent 59.70863%, #bfba72 59.70863%, #bfba72 65.88078%, transparent 65.88078%, transparent 68.23843%, #bfba72 68.23843%, #bfba72 74.41059%, transparent 74.41059%, transparent 76.76824%, #bfba72 76.76824%, #bfba72 82.94039%, transparent 82.94039%, transparent 85.29804%, #bfba72 85.29804%, #bfba72 91.4702%, transparent 91.4702%, transparent 93.82785%, #bfba72 93.82785%, #bfba72 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, #bfba72 0, #bfba72 6.17215%, transparent 6.17215%, transparent 8.5298%, #bfba72 8.5298%, #bfba72 14.70196%, transparent 14.70196%, transparent 17.05961%, #bfba72 17.05961%, #bfba72 23.23176%, transparent 23.23176%, transparent 25.58941%, #bfba72 25.58941%, #bfba72 31.76157%, transparent 31.76157%, transparent 34.11922%, #bfba72 34.11922%, #bfba72 40.29137%, transparent 40.29137%, transparent 42.64902%, #bfba72 42.64902%, #bfba72 48.82117%, transparent 48.82117%, transparent 51.17883%, #bfba72 51.17883%, #bfba72 57.35098%, transparent 57.35098%, transparent 59.70863%, #bfba72 59.70863%, #bfba72 65.88078%, transparent 65.88078%, transparent 68.23843%, #bfba72 68.23843%, #bfba72 74.41059%, transparent 74.41059%, transparent 76.76824%, #bfba72 76.76824%, #bfba72 82.94039%, transparent 82.94039%, transparent 85.29804%, #bfba72 85.29804%, #bfba72 91.4702%, transparent 91.4702%, transparent 93.82785%, #bfba72 93.82785%, #bfba72 100.0%, transparent 100.0%);
+  background-image: linear-gradient(left, transparent 0, #bfba72 0, #bfba72 6.17215%, transparent 6.17215%, transparent 8.5298%, #bfba72 8.5298%, #bfba72 14.70196%, transparent 14.70196%, transparent 17.05961%, #bfba72 17.05961%, #bfba72 23.23176%, transparent 23.23176%, transparent 25.58941%, #bfba72 25.58941%, #bfba72 31.76157%, transparent 31.76157%, transparent 34.11922%, #bfba72 34.11922%, #bfba72 40.29137%, transparent 40.29137%, transparent 42.64902%, #bfba72 42.64902%, #bfba72 48.82117%, transparent 48.82117%, transparent 51.17883%, #bfba72 51.17883%, #bfba72 57.35098%, transparent 57.35098%, transparent 59.70863%, #bfba72 59.70863%, #bfba72 65.88078%, transparent 65.88078%, transparent 68.23843%, #bfba72 68.23843%, #bfba72 74.41059%, transparent 74.41059%, transparent 76.76824%, #bfba72 76.76824%, #bfba72 82.94039%, transparent 82.94039%, transparent 85.29804%, #bfba72 85.29804%, #bfba72 91.4702%, transparent 91.4702%, transparent 93.82785%, #bfba72 93.82785%, #bfba72 100.0%, transparent 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.1;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999; }
+
 .blue-background {
   background-color: #72b9bf;
   background-image: -webkit-radial-gradient(#72b9bf, #bfba72, #72a3bf, #7273bf);
@@ -45,6 +65,10 @@ Main components
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   transition-duration: 0.4s; }
+  .cd-main-content:after {
+    content: "";
+    display: table;
+    clear: both; }
   .cd-main-content.lateral-menu-is-open {
     /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
     -webkit-transform: translateX(-260px);
@@ -395,6 +419,18 @@ button {
       height: auto;
       padding: 10px; } }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #bfba72; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .so-scroller {
   margin-top: 3em;
   overflow: hidden; }
@@ -501,15 +537,33 @@ button {
 
   .so-side img {
     max-width: 100%; } }
-.placeholder-275 {
+.portfolio-item {
   width: 275px;
   height: 275px;
-  float: left;
   margin-top: 10px;
   margin-right: 10px; }
 
 .portfolio-item {
-  display: none; }
+  display: none;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .portfolio-item:last-child {
+    margin-right: 0; }
+  .portfolio-item:nth-child(4n) {
+    margin-right: 0; }
+  .portfolio-item:nth-child(4n+1) {
+    clear: left; }
+  @media screen and (max-width: 500px) {
+    .portfolio-item {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-right: 0; }
+      .portfolio-item:last-child {
+        margin-right: 0; } }
 
 .yellow {
   background: #bfba72; }
@@ -521,10 +575,16 @@ button {
   background: #72b9bf; }
 
 #portfolio-container {
-  display: block;
   margin: 0 auto;
-  width: 85%;
-  background: rgba(225, 255, 255, 0.2); }
+  width: 100%;
+  margin-bottom: 95px;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #portfolio-container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .portfolio-item img {
   display: block;

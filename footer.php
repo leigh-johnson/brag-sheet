@@ -1,4 +1,7 @@
+	<footer>
+	Test
 
+	</footer>
 	</main> <!-- cd-main-content -->
 
 	<nav id="cd-lateral-nav">
@@ -58,12 +61,5 @@
 		</div> <!-- socials -->
 	</nav>
 	<script src="<?php echo theme_url('js/navigation.js'); ?>"></script>
-</body>
-<footer>
-Test
-
-</footer>
-
-        </script>
 	</body>
 </html>

@@ -77,7 +77,7 @@ Main components
 
 	@include transition-property(transform);
 	@include transition-duration(.4s);
-
+	@include clearfix;
 	&.lateral-menu-is-open {
 		/* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
 		@include transform(translateX(-260px));

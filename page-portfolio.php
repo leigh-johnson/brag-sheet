@@ -22,50 +22,50 @@
 	<div id="portfolio-container">
 		<!-- portfolio-items-->
 		<!-- REQUIRED class="portfolio-item" -->
-		<figure class="portfolio-item green placeholder-275">
+		<figure class="portfolio-item green ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item blue placeholder-275">
+		<figure class="portfolio-item blue ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item yellow placeholder-275">
+		<figure class="portfolio-item yellow ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item green placeholder-275">
+		<figure class="portfolio-item green ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item blue placeholder-275">
+		<figure class="portfolio-item blue ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item yellow placeholder-275">
+		<figure class="portfolio-item yellow ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item green placeholder-275">
+		<figure class="portfolio-item green ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
-		</figure><figure class="portfolio-item blue placeholder-275">
-			<img src="http://placehold.it/225x225"></img>
-			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
-		</figure>
-		<figure class="portfolio-item yellow placeholder-275">
+		</figure><figure class="portfolio-item blue ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item green placeholder-275">
+		<figure class="portfolio-item yellow ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item blue placeholder-275">
+		<figure class="portfolio-item green ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
-		<figure class="portfolio-item yellow placeholder-275">
+		<figure class="portfolio-item blue ">
+			<img src="http://placehold.it/225x225"></img>
+			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
+		</figure>
+		<figure class="portfolio-item yellow ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>Toffee tiramisu jelly donut wafer</figcaption>
 		</figure>
