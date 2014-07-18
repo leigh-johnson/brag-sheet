@@ -8,8 +8,8 @@
 		
 		<title><?php echo page_title(); ?> | <?php echo site_name(); ?></title>
 		
-		<link href="<?php echo theme_url('css/screen.css'); ?>"  rel="stylesheet" media="screen" type="text/css" />
-		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.ico'); ?>" type="image/x-icon" />
+		<link href="<?php echo theme_url('css/screen.css'); ?>"  rel="stylesheet" media="screen">
+		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.ico'); ?>">
  		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>		
  		<script src="<?php echo theme_url('js/modernizr.custom.js'); ?>"></script>
 		<!-- Add per-post CSS -->
