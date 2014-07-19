@@ -21,7 +21,25 @@
 		<?php if(article_js()): ?>
 			<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
-
+		<!-- Open graph meta https://gist.github.com/daviddarnes/5735237 -->
+		<meta property="og:type" content="Brag Sheet">
+		<meta property="og:site_name" content="<?php echo site_name(); ?>">
+		<?php if(is_homepage() == true) : ?>
+			<meta property="og:url" content="http://sandbox.leighjohnson.me/brag-sheet">
+			<meta property="og:title" content="<?php echo site_name(); ?>">
+			<meta property="og:description" content="<?php echo site_description(); ?>">
+		<?php else: ?>
+			<meta property="og:url" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . current_url(); ?>">
+			<meta property="og:title" content="<?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?>">
+			<meta property="og:description" content="<?php if(strlen(article_description())) : echo article_description(); else: echo site_description(); endif; ?>">
+		<?php endif; ?>
+		<!-- If you have any image custom fields -->
+		<?php $thumbnail = article_custom_field('thumbnail');
+			if ( !empty($thumbnail) ) : ?>
+			<meta property="og:image" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . $thumbnail; ?>">
+		<?php else: ?>
+			<meta property="og:image" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . theme_url('img/logo.png'); ?>">
+		<?php endif; ?>
 	</head>
 
 	<body>
@@ -30,7 +48,8 @@
 			<a id="cd-logo" href="#0"><img src="http://placehold.it/200x50" alt="Homepage"></a>
 			<nav id="cd-top-nav">
 				<ul>
-					<li><a href="#0">Link!</a></li>
+					<li><form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">
+      				</form></li>
 					<li><a href="#0">Login?</a></li>
 				</ul>
 			</nav>

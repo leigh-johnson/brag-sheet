@@ -1,5 +1,6 @@
 <?php theme_include('header'); ?>
-	
+	<link href="<?php echo theme_url('css/page-about.css'); ?>"  rel="stylesheet" media="screen">
+
 	<!-- Source credit: http://tympanus.net/codrops/2013/07/18/on-scroll-effect-layout/ -->
 	<div id="so-scroller" class="so-scroller">
 				<section class="so-section">

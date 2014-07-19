@@ -29,3 +29,8 @@
 #### To-do
 * Documentation
 * Make SCSS sheets modular, so extra styles aren't being loaded unnecessarily
+
+#### Usage
+
+* screen.scss -> screen.css // Contains global styles, grid system, variables, and mixins
+* page-$name.scss -> page-$name.css // Modular styles for page templates; e.g. page-about.css contains all styles for page-about.php

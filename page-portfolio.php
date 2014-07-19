@@ -1,4 +1,5 @@
 <?php theme_include('header'); ?>
+	<link href="<?php echo theme_url('css/page-portfolio.css'); ?>"  rel="stylesheet" media="screen">
 
 	<h1><?php echo page_title(); ?></h1>
 
