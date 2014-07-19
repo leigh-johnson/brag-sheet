@@ -88,6 +88,9 @@
 	-moz-transform: translateX(80px);
 	transform: translateX(80px);
 }
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "partials/variables";
 
 /* Animated state */
 /* add you final states (transition) or your effects (animations) for each side */

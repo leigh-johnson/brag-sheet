@@ -71,6 +71,16 @@
   -moz-transform: translateX(80px);
   transform: translateX(80px); }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.blue-background {
+  background-color: #72b9bf;
+  background-image: -webkit-radial-gradient(#72b9bf, #bfba72, #72a3bf, #7273bf);
+  background-image: radial-gradient(  #72b9bf, #bfba72, #72a3bf, #7273bf); }
+
 /* Animated state */
 /* add you final states (transition) or your effects (animations) for each side */
 .so-section.so-animate .so-side-left,
