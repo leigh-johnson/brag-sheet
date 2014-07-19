@@ -7,22 +7,28 @@
 	<nav id="cd-lateral-nav">
 		<ul class="cd-navigation">
 			<li class="item-has-children">
-				<a href="#0">Services</a>
+				<a href="#0">Pages</a>
 				<ul class="sub-menu">
-					<li><a href="#0">Brand</a></li>
-					<li><a href="#0">Web Apps</a></li>
-					<li><a href="#0">Mobile Apps</a></li>
+					<?php while(menu_items()): ?>
+					<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+					<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+						<?php echo menu_name(); ?>
+					</a>
+					</li>
+					<?php endwhile; ?>
 				</ul>
 			</li> <!-- item-has-children -->
 
 			<li class="item-has-children">
-				<a href="#0">Products</a>
+				<a href="#0">Articles</a>
 				<ul class="sub-menu">
-					<li><a href="#0">Product 1</a></li>
-					<li><a href="#0">Product 2</a></li>
-					<li><a href="#0">Product 3</a></li>
-					<li><a href="#0">Product 4</a></li>
-					<li><a href="#0">Product 5</a></li>
+					<?php while(categories()): ?>
+							<li>
+								<a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
+									<?php echo category_title(); ?>
+								</a>
+							</li>
+					<?php endwhile; ?>
 				</ul>
 			</li> <!-- item-has-children -->
 
