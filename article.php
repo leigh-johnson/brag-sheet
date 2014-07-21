@@ -1,6 +1,7 @@
 <?php theme_include('header'); ?>
 	<link href="<?php echo theme_url('css/article.css'); ?>"  rel="stylesheet" media="screen">
 
+	<div id="article-container">
 		<section class="content">
 			<article>
 		    	<h1><?php echo article_title(); ?></h1>
@@ -31,5 +32,6 @@
 				</form>
 			<?php endif; ?>
 		</section>
+	</div>
 
 <?php theme_include('footer'); ?>

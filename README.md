@@ -31,6 +31,8 @@
 * Documentation
 * Make SCSS sheets modular, so extra styles aren't being loaded unnecessarily
 
+#### Installation
+
 #### Usage
 
 * screen.scss -> screen.css // Contains global styles, grid system, variables, and mixins

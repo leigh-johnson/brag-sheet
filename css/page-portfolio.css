@@ -1,12 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Titillium+Web:400,700,400italic);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-.blue-background {
-  background-color: #72b9bf;
-  background-image: -webkit-radial-gradient(#72b9bf, #bfba72, #72a3bf, #7273bf);
-  background-image: radial-gradient(  #72b9bf, #bfba72, #72a3bf, #7273bf); }
 
 .portfolio-item img {
   position: relative;

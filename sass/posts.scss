@@ -3,19 +3,22 @@
 @import "partials/variables";
 
 
-.content {
-	p {}
-	article {}
-	h1 {}
-
-}
-
-.pagination {
-
-}
-
-#blog-container{
+#posts-container{
+	margin: 0 auto;
+	background: rgba(225, 225, 225, 0.6);
 	margin-bottom: $footer-margin;
-	width: 100%;
+	width: 80%;
+
+	h1 {
+		font-family: $heading-font;
+		font-size: 50px;
+	}
+	.content {
+		padding: 1em;
+		margin: 2em;
+	}
+
+	.pagination {}
+	ul {}
 
 }

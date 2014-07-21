@@ -5,17 +5,6 @@ $mobile: new-breakpoint(max-width 500px 4);
 
 // fonts
 
-@mixin raleway($weight){
-	@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
-	font-family: 'Raleway', sans-serif;
-	font-weight: $weight;
-}
-
-@mixin pt-sans($weight) {
-	@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-	font-family: 'PT Sans', sans-serif;
-	font-weight: $weight;
-}
 
 // variables - colors
 
@@ -35,8 +24,9 @@ $color-2: #2C3E50; // green darker
 $color-3: #59ABE3; // green light
 
 // variables - fonts 
-
-$primary-font: 'Titillium Web', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Titillium+Web:400,700,400italic);
+$primary-font: 'PT Sans', sans-serif;
+$heading-font: 'Titillium Web', sans-serif;
 
 // variables - z-index 
 
@@ -51,10 +41,6 @@ $header-M: 70px;
 // footer margin applied to various content containers for push
 $footer-margin: 95px;
 // Some pretty color samples
-
-.blue-background {
-	@include radial-gradient($light-green, $light-yellow, $light-blue, $light-purple);
-}
 
 
 %vertical-align {

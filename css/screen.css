@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Titillium+Web:400,700,400italic);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -23,10 +24,12 @@ body:before {
   pointer-events: none;
   z-index: 9999; }
 
-.blue-background {
-  background-color: #72b9bf;
-  background-image: -webkit-radial-gradient(#72b9bf, #bfba72, #72a3bf, #7273bf);
-  background-image: radial-gradient(  #72b9bf, #bfba72, #72a3bf, #7273bf); }
+#cd-logo {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .cd-img-replace {
   /* replace text with a background-image */
@@ -379,23 +382,13 @@ html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-h1 {
-  @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700; }
-
-p {
-  @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400; }
-
 a {
   color: #6cac70;
   text-decoration: none; }
 
 body {
   font-size: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: white;
   position: relative;
   background-color: #7273bf; }

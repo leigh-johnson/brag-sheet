@@ -15,15 +15,6 @@ html * {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-	@include pt-sans(700);
-}
-
-p {
-	@include raleway(400);
-}
-
-
 a {
 	color: $link;
 	text-decoration: none;
