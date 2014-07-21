@@ -4,6 +4,7 @@
 		<div id="posts-container">
 		<ul><!-- Categories Roll -->
 			    	<h3>View by category</h3>
+			    	<li><a href="<?php echo full_url(); ?>">All</a></li>
        				<?php while(categories()): ?>
 					<li><a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
 									<?php echo category_title(); ?>
@@ -14,12 +15,14 @@
 		<section class="content">
 			<?php if(has_posts()) : while(posts()) : ?>
 				<article>
-				<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
-			    	<h1>
-			        	<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+					<figure><img src="<?php echo article_custom_field('thumbnail');?>"></img></figure> 
+					<h1>
+			        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 			        </h1>
+			        <h3 class="article-time">Estimated read time: <?php echo reading_time(article_html()); ?> </h3>
+
 					<p><?php echo article_description(); ?></p>
-					<figure><img src="<?php echo article_custom_field('thumbnail');?>"></img></figure>
+			         <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
 				</article>
 			<?php endwhile; endif; ?>
 		</section>

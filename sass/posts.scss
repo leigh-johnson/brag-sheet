@@ -3,22 +3,63 @@
 @import "partials/variables";
 
 
+
 #posts-container{
+	text-align: center;
 	margin: 0 auto;
 	background: rgba(225, 225, 225, 0.6);
 	margin-bottom: $footer-margin;
 	width: 80%;
-
+	@include media($papa-bear) {
+		width: 100%;
+	}
+	time {
+		float: right;
+		text-align: right;
+		@include clearfix;
+	}
 	h1 {
+		color: #fff;
+		font-weight: 700;
 		font-family: $heading-font;
-		font-size: 50px;
-	}
-	.content {
-		padding: 1em;
-		margin: 2em;
+		font-size: 2em;
+		padding: 10px;
 	}
 
+	a:hover {
+		color: $light-yellow;
+	}
+	article {
+		height: 300px;
+		padding: 10px;
+	}
+
+	.content {
+		line-height: 200%;
+		margin: 1em auto;
+		width: 85%;
+	}
 	.pagination {}
-	ul {}
+	ul {
+		padding: 10px;
+	}
+
+	img {
+		margin-right: 1em;
+		margin-bottom: 1em;
+		float: left;
+		@include clearfix;
+		@include media($mama-bear) {
+			height: 100px;
+			width: 100px;
+
+		}
+	}
+
+	p {
+		font-weight: 700;
+		font-size: 1.5em;
+		padding: 10px;
+	}
 
 }

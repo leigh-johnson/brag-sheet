@@ -42,3 +42,13 @@ function relative_time($time) {
 		}
 	}
 }
+
+function reading_time($post_content) {
+	$words = str_word_count(strip_tags($post_content));
+	$m = floor($words/200);
+	$s = floor($words % 200 / (200/60));
+	$est = $m . ' minute' . ($m == 1 ? '' : 's') . ', ' . $s . ' second' . ($s == 1 ? '' : 's');
+	return $est;
+}
+
+?>

@@ -5,7 +5,9 @@
 		<section class="content">
 			<article>
 		    	<h1><?php echo article_title(); ?></h1>
-		        <h5><?php echo article_date(); ?></h5>
+          		<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
+			  	<h3 class="article-time">Estimated read time: <?php echo reading_time(article_html()); ?> </h3>
+
 			    <?php echo article_markdown(); ?>
 			    <?php echo article_custom_field('attribution'); ?>
 			</article>
