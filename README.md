@@ -5,6 +5,7 @@
 
 #### Features
 * Responsive, mobile-ready 
+* Drawer navigation 
 * Beautiful preset palettes
 * Rich typography & icon fonts (Icomoo)
 * Mixitup gallery for art, photos, and your wildest visuals: https://mixitup.kunkalabs.com/
@@ -34,3 +35,4 @@
 
 * screen.scss -> screen.css // Contains global styles, grid system, variables, and mixins
 * page-$name.scss -> page-$name.css // Modular styles for page templates; e.g. page-about.css contains all styles for page-about.php
+* Drawer navigation requires all content to be nested between <main> tags, which open in header.php and close in footer.php. 

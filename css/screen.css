@@ -379,6 +379,16 @@ html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+h1 {
+  @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700; }
+
+p {
+  @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; }
+
 a {
   color: #6cac70;
   text-decoration: none; }

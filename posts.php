@@ -1,4 +1,7 @@
 <?php theme_include('header'); ?>
+	<link href="<?php echo theme_url('css/posts.css'); ?>"  rel="stylesheet" media="screen">
+
+		<div id="blog-container">
 		<ul><!-- Categories Roll -->
 			    	<h3>View by category</h3>
        				<?php while(categories()): ?>
@@ -28,5 +31,6 @@
 			    </nav>
 			<?php endif; ?>
 		</section>
+		</div>
 
 <?php theme_include('footer'); ?>

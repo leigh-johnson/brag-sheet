@@ -1,0 +1,21 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "partials/variables";
+
+
+.content {
+	p {}
+	article {}
+	h1 {}
+
+}
+
+.pagination {
+
+}
+
+#blog-container{
+	margin-bottom: $footer-margin;
+	width: 100%;
+
+}

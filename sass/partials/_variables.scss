@@ -3,6 +3,20 @@
 //Breakpoints
 $mobile: new-breakpoint(max-width 500px 4);
 
+// fonts
+
+@mixin raleway($weight){
+	@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+	font-family: 'Raleway', sans-serif;
+	font-weight: $weight;
+}
+
+@mixin pt-sans($weight) {
+	@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+	font-family: 'PT Sans', sans-serif;
+	font-weight: $weight;
+}
+
 // variables - colors
 
 //Sky palette
@@ -34,6 +48,8 @@ $secondary-nav: 1;
 $header-S: 50px;
 $header-M: 70px;
 
+// footer margin applied to various content containers for push
+$footer-margin: 95px;
 // Some pretty color samples
 
 .blue-background {

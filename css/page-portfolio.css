@@ -52,6 +52,28 @@
 .green {
   background: #72b9bf; }
 
+#filter-container {
+  width: 80%;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #filter-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #filter-container button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 10.43705%;
+    margin: 0 auto; }
+    #filter-container button:last-child {
+      margin-right: 0; }
+    #filter-container button:nth-child(4n) {
+      margin-right: 0; }
+    #filter-container button:nth-child(4n+1) {
+      clear: left; }
+
 #portfolio-container {
   margin: 0 auto;
   width: 100%;

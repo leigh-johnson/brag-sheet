@@ -1,4 +1,5 @@
 <?php theme_include('header'); ?>
+	<link href="<?php echo theme_url('css/article.css'); ?>"  rel="stylesheet" media="screen">
 
 		<section class="content">
 			<article>
