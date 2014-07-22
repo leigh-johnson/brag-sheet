@@ -7,13 +7,13 @@
 			<?php if(has_posts()) : while(posts()) : ?>
 				<article>
 					<figure><img src="<?php echo article_custom_field('thumbnail');?>"></img></figure> 
-					<h1>
-			        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-			        </h1>
-			        <h3 class="article-time">Estimated read time: <?php echo reading_time(article_html()); ?> </h3>
+					<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
 
-					<p><?php echo article_description(); ?></p>
-			         <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
+					<h2>
+			        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+			        </h2>
+			        <p><?php echo article_description(); ?></p>
+			        <h3 class="read-time">Read Time: <?php echo reading_time(article_html()); ?></h3>
 				</article>
 			<?php endwhile; endif; ?>
 		</section>

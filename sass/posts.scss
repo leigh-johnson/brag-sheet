@@ -11,7 +11,6 @@
  	margin: 1em;
  }
 #posts-container{
-	text-align: center;
 	margin: 0 auto;
 	background: rgba(225, 225, 225, 0.6);
 	margin-bottom: $footer-margin;
@@ -20,38 +19,60 @@
 		width: 100%;
 	}
 	time {
-		font-weight: 600;
-		padding: 15px;
+		font-size: 1em;
+		font-weight: 700;
 		@include clearfix;
+		@include media($mama-bear) {
+			font-weight: 400;
+		}
+
+	.read-time {
+		position: absolute;
+		bottom: 0;
+		left: 0;
 	}
-	h1 {
+	}
+	h2 {
+		@extend %heading-font;
+		padding: 20px;
+		text-align: center;
 		color: #fff;
 		font-weight: 700;
 		font-size: 2em;
+		@include media($mama-bear){
+			font-size: 1.5em;
+			font-weight: 600;
+			padding: 10px;
+		}
 	}
 
 	a:hover {
-		color: $light-yellow;
+		color: $link-hover;
 	}
 	article {
+		text-align: center;
+		line-height: 280%;
 		padding: 20px;
 		width: 100%;
-		height: 300px;
+		height: auto;
+		@include clearfix;
+		@include media($mama-bear) {
+			padding: 10px;
+			line-height: 150%;
+		}
 	}
 
 	article:nth-child(odd) {
 		background: $article1;
 		img {float: right;}
 		time{
-			float: left;
-			text-align: left;}
+			float: left;}
 	}
 	article:nth-child(even){
 		background: $article2;
 		img {float: left;}
 		time{
-			float: right;
-			text-align: right;}
+			float: right;}
 	}
 
 	.content {
@@ -61,22 +82,25 @@
 		@include media($papa-bear);
 			width: 100%;
 	}
-	.pagination {}
-	ul {
-		padding: 10px;
-	}
 
 	img {
+
 		@include media($mama-bear) {
-			height: 100px;
-			width: 100px;
+			display: none;
+
 
 		}
 	}
 	p {
+		padding: 20px;
+		text-align: center;
 		font-weight: 700;
 		font-size: 1.5em;
-		padding: 10px;
+		@include padding(15px null 5px null);
+		@include media($mama-bear){
+			font-size: 1em;
+			padding: 10px;
+		}
 	}
 
 }

@@ -3,8 +3,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1 {
-  font-family: 'Titillium Web', sans-serif; }
+h1, #posts-container h2 {
+  font-family: 'Titillium Web', sans-serif !important; }
 
 h1 {
   text-align: center;
@@ -13,7 +13,6 @@ h1 {
   margin: 1em; }
 
 #posts-container {
-  text-align: center;
   margin: 0 auto;
   background: rgba(225, 225, 225, 0.6);
   margin-bottom: 95px;
@@ -22,48 +21,74 @@ h1 {
     #posts-container {
       width: 100%; } }
   #posts-container time {
-    font-weight: 600;
-    padding: 15px; }
+    font-size: 1em;
+    font-weight: 700; }
     #posts-container time:after {
       content: "";
       display: table;
       clear: both; }
-  #posts-container h1 {
+    @media screen and (max-width: 500px) {
+      #posts-container time {
+        font-weight: 400; } }
+    #posts-container time .read-time {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  #posts-container h2 {
+    padding: 20px;
+    text-align: center;
     color: #fff;
     font-weight: 700;
     font-size: 2em; }
+    @media screen and (max-width: 500px) {
+      #posts-container h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 10px; } }
   #posts-container a:hover {
     color: #bfba72; }
   #posts-container article {
+    text-align: center;
+    line-height: 280%;
     padding: 20px;
     width: 100%;
-    height: 300px; }
+    height: auto; }
+    #posts-container article:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (max-width: 500px) {
+      #posts-container article {
+        padding: 10px;
+        line-height: 150%; } }
   #posts-container article:nth-child(odd) {
     background: #bfba72; }
     #posts-container article:nth-child(odd) img {
       float: right; }
     #posts-container article:nth-child(odd) time {
-      float: left;
-      text-align: left; }
+      float: left; }
   #posts-container article:nth-child(even) {
     background: #72b9bf; }
     #posts-container article:nth-child(even) img {
       float: left; }
     #posts-container article:nth-child(even) time {
-      float: right;
-      text-align: right; }
+      float: right; }
   #posts-container .content {
     line-height: 200%;
     margin: 0 auto;
     width: 100%;
     width: 100%; }
-  #posts-container ul {
-    padding: 10px; }
   @media screen and (max-width: 500px) {
     #posts-container img {
-      height: 100px;
-      width: 100px; } }
+      display: none; } }
   #posts-container p {
+    padding: 20px;
+    text-align: center;
     font-weight: 700;
     font-size: 1.5em;
-    padding: 10px; }
+    padding-top: 15px;
+    padding-bottom: 5px; }
+    @media screen and (max-width: 500px) {
+      #posts-container p {
+        font-size: 1em;
+        padding: 10px; } }

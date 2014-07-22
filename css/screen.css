@@ -24,7 +24,10 @@ body:before {
   z-index: 9999; }
 
 body, html {
-  font-family: 'Lato', Arial, sans-serif; }
+  font-family: 'Lora', Arial, serif !important; }
+
+header, #cd-lateral-nav {
+  font-family: 'Titillium Web', sans-serif !important; }
 
 #cd-logo {
   position: relative;
@@ -314,7 +317,7 @@ header {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 1em;
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-arrow-sec-exp-nav.svg") no-repeat center center;
+    background: url("../img/cd-arrow-sec-exp-nav.svg") no-repeat center center;
     background-size: 8px 11px;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
@@ -340,7 +343,7 @@ header {
     width: 32px;
     float: left;
     padding: 0;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-socials.svg");
+    background-image: url("../img/cd-socials.svg");
     background-repeat: no-repeat;
     background-size: 128px 64px;
     background-color: #FFF;

@@ -27,20 +27,23 @@ $article2: $light-green;
 // general
 $main-text: #fff; // main text
 $link: $light-blue; // anchor tags
+$link-hover: $light-yellow;
 $background-color: rgba(225, 225, 225, 0.9); // body background color
 $bg-img: $light-wood;
 
-$color-1: $light-blue; // green dark
-$color-2: #2C3E50; // green darker
-$color-3: #59ABE3; // green light
+
+// nav colors
+$color-1: $light-blue; // dark
+$color-2: #2C3E50; // darker
+$color-3: #59ABE3; // light
 
 // Fonts - Usage: https://github.com/penman/Sass-Web-Fonts
-
+// Google fonts URL in header.php
 %primary-font {
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: 'Lora', Arial, serif !important;
 }
 %heading-font {
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif !important;
 }
 
 // variables - z-index 

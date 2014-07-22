@@ -85,6 +85,7 @@ Main components
 }
 
 header {
+	@extend %heading-font;
 	position: relative;
 	height: $header-S;
 	width: 100%;
@@ -236,6 +237,7 @@ header {
 }
 
 #cd-lateral-nav {
+	@extend %heading-font;
 	position: fixed;
 	height: 100%;
 	right: 0;
@@ -314,7 +316,7 @@ header {
 		position: absolute;
 		@include center(y);
 		right: 1em;
-		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-arrow-sec-exp-nav.svg') no-repeat center center;
+		background: url('../img/cd-arrow-sec-exp-nav.svg') no-repeat center center;
 		background-size: 8px 11px;
 
 		@include transition-property(transform);
@@ -336,7 +338,7 @@ header {
 		width: 32px;
 		float: left;
 		padding: 0;
-		background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-socials.svg');
+		background-image: url('../img/cd-socials.svg');
 		background-repeat: no-repeat;
 		background-size: 128px 64px;
 		background-color: #FFF;

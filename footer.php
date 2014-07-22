@@ -33,7 +33,7 @@
 			</li> <!-- item-has-children -->
 
 			<li class="item-has-children">
-				<a href="#0">Stockists</a>
+				<a href="#0">Affiliates</a>
 				<ul class="sub-menu">
 					<li><a href="#0">London</a></li>
 					<li><a href="#0">New York</a></li>
