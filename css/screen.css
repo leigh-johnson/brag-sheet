@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Titillium+Web:400,700,400italic);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -24,12 +23,59 @@ body:before {
   pointer-events: none;
   z-index: 9999; }
 
+body, html {
+  font-family: 'Lato', Arial, sans-serif; }
+
 #cd-logo {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  color: #72a3bf;
+  text-decoration: none; }
+
+body {
+  color: white;
+  position: relative; }
+
+button {
+  width: 8em;
+  text-align: center;
+  padding: 10px; }
+  @media screen and (max-width: 500px) {
+    button {
+      padding: 0;
+      width: 5em; } }
+
+button {
+  display: block;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  margin-bottom: 1px; }
+  @media screen and (max-width: 500px) {
+    button {
+      width: auto;
+      height: auto;
+      padding: 10px; } }
 
 .cd-img-replace {
   /* replace text with a background-image */
@@ -50,7 +96,7 @@ Main components
   /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
   min-height: 100%;
   position: relative;
-  background-color: #7273bf;
+  background-image: url("../img/bg_wood.png");
   z-index: 2;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -367,53 +413,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%; }
-
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-a {
-  color: #72a3bf;
-  text-decoration: none; }
-
-body {
-  font-size: 100%;
-  font-family: "PT Sans", sans-serif;
-  color: white;
-  position: relative;
-  background-color: #7273bf; }
-
-button {
-  width: 8em;
-  text-align: center;
-  padding: 10px; }
-  @media screen and (max-width: 500px) {
-    button {
-      padding: 0;
-      width: 5em; } }
-
-button {
-  display: block;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  padding: 10px;
-  margin-bottom: 1px; }
-  @media screen and (max-width: 500px) {
-    button {
-      width: auto;
-      height: auto;
-      padding: 10px; } }
 
 footer {
   position: absolute;

@@ -68,7 +68,7 @@ Main components
 	/* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
 	min-height: 100%;
 	position: relative;
-	background-color: $background;
+	background-image: url($bg-img);
 	z-index: $content-zindex;
 
 	/* Force Hardware Acceleration in WebKit */

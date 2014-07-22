@@ -1,17 +1,8 @@
 <?php theme_include('header'); ?>
 	<link href="<?php echo theme_url('css/posts.css'); ?>"  rel="stylesheet" media="screen">
-
+		<h1><?php echo page_title(); ?></h1>
 		<div id="posts-container">
-		<ul><!-- Categories Roll -->
-			    	<h3>View by category</h3>
-			    	<li><a href="<?php echo full_url(); ?>">All</a></li>
-       				<?php while(categories()): ?>
-					<li><a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
-									<?php echo category_title(); ?>
-					</a>
-					</li>
-					<?php endwhile; ?>
-      	</ul>
+		
 		<section class="content">
 			<?php if(has_posts()) : while(posts()) : ?>
 				<article>

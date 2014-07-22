@@ -5,6 +5,7 @@
 }
 
 body, html {
+	@extend %primary-font;
 	margin:0;
 	padding:0;
 	height:100%; 
@@ -20,14 +21,10 @@ a {
 	text-decoration: none;
 }
 body {
-	font: {
-		size: 100%;
-		family: $primary-font;
-	}
 	color: $main-text;
 	position: relative;
-	background-color: $background;
 }
+
 
 
 // Grid system

@@ -1,5 +1,9 @@
 // The organization of this file is shameful. Clean it up, there are PEOPLE watching.
 
+
+//assets
+// backgrounds - values for $bg-img
+$light-wood: "../img/bg_wood.png";
 //Breakpoints
 
 $baby-bear: new-breakpoint(max-width 320px);
@@ -7,11 +11,7 @@ $mama-bear: new-breakpoint(max-width 500px);
 $papa-bear: new-breakpoint(max-width 700px);
 $mobile: new-breakpoint(max-width 500px 4);
 
-// fonts
-
-
 // variables - colors
-
 //Sky palette
 
 $light-green: rgb(114, 185, 191);
@@ -19,18 +19,29 @@ $light-yellow: rgb(191, 186, 114);
 $light-blue: rgb(114, 163, 191);
 $light-purple: rgb(114, 115, 191);
 
+// posts & articles
+$article1: $light-yellow;
+$article2: $light-green;
+
+
+// general
 $main-text: #fff; // main text
 $link: $light-blue; // anchor tags
-$background: $light-purple; // body background color
+$background-color: rgba(225, 225, 225, 0.9); // body background color
+$bg-img: $light-wood;
 
 $color-1: $light-blue; // green dark
 $color-2: #2C3E50; // green darker
 $color-3: #59ABE3; // green light
 
-// variables - fonts 
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Titillium+Web:400,700,400italic);
-$primary-font: 'PT Sans', sans-serif;
-$heading-font: 'Titillium Web', sans-serif;
+// Fonts - Usage: https://github.com/penman/Sass-Web-Fonts
+
+%primary-font {
+	font-family: 'Lato', Arial, sans-serif;
+}
+%heading-font {
+	font-family: 'Titillium Web', sans-serif;
+}
 
 // variables - z-index 
 
