@@ -1,8 +1,8 @@
 <?php theme_include('header'); ?>
 	<link href="<?php echo theme_url('css/posts.css'); ?>"  rel="stylesheet" media="screen">
-		<h1><?php echo page_title(); ?></h1>
-		<div id="posts-container">
 		
+		<div id="posts-container">
+		<h1><?php echo page_title(); ?></h1>
 		<section class="content">
 			<?php if(has_posts()) : while(posts()) : ?>
 				<article><figure><img src="<?php echo article_custom_field('thumbnail');?>"></img></figure> 
