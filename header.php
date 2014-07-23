@@ -23,15 +23,15 @@
 		<?php endif; ?>
 		<!-- Open graph meta https://gist.github.com/daviddarnes/5735237 -->
 		<meta property="og:type" content="Brag Sheet">
-		<meta property="og:site_name" content="<?php echo site_name(); ?>">
-		<?php if(is_homepage() == true) : ?>
+		<meta property="og:site_name" content="<?php echo article_title(); ?> - <?php echo site_name(); ?>">
+		<?php  if(current_url() == "/" || current_url() == "posts") : ?>
 			<meta property="og:url" content="http://sandbox.leighjohnson.me/brag-sheet">
 			<meta property="og:title" content="<?php echo site_name(); ?>">
 			<meta property="og:description" content="<?php echo site_description(); ?>">
 		<?php else: ?>
 			<meta property="og:url" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . current_url(); ?>">
-			<meta property="og:title" content="<?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?>">
-			<meta property="og:description" content="<?php if(strlen(article_description())) : echo article_description(); else: echo site_description(); endif; ?>">
+			<meta property="og:title" content="<?php echo article_title(); ?> - <?php echo site_name(); ?>">
+			<meta property="og:description" content="<?php echo article_description(); ?>">
 		<?php endif; ?>
 		<!-- If you have any image custom fields -->
 		<?php $thumbnail = article_custom_field('thumbnail');
@@ -45,7 +45,7 @@
 	<body>
 	<main class="cd-main-content">
 		<header>
-			<a id="cd-logo" href="#0"><img src="http://placehold.it/200x50" alt="Homepage"></a>
+			<a id="cd-logo" href="<?php echo full_url(); ?>"><h1><?php echo site_name();?></h1></a>
 			<nav id="cd-top-nav">
 				<ul>
 					<li><form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">

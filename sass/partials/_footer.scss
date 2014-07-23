@@ -3,9 +3,9 @@ footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 80px;
+	height: 70px;
 	width: 100%;
-	background: $light-yellow;
+	background: $color-1;
 	@include clearfix;
 }
 

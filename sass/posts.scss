@@ -5,14 +5,15 @@
 
  h1 {
  	@extend %heading-font;
+ 	color: $h1;
+ 	text-shadow: 2px 2px $h1-shadow;
  	text-align: center;
  	font-weight: 700;
  	font-size: 2em;
  	margin: 1em;
  }
-#posts-container{
+#posts-container {
 	margin: 0 auto;
-	background: rgba(225, 225, 225, 0.6);
 	margin-bottom: $footer-margin;
 	width: 80%;
 	@include media($papa-bear) {
@@ -21,22 +22,20 @@
 	time {
 		font-size: 1em;
 		font-weight: 700;
-		@include clearfix;
 		@include media($mama-bear) {
 			font-weight: 400;
 		}
-
+	}
 	.read-time {
-		position: absolute;
-		bottom: 0;
-		left: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		line-height: 100%;
 	}
-	}
+
 	h2 {
 		@extend %heading-font;
+		text-transform: uppercase;
 		padding: 20px;
-		text-align: center;
-		color: #fff;
 		font-weight: 700;
 		font-size: 2em;
 		@include media($mama-bear){
@@ -45,7 +44,9 @@
 			padding: 10px;
 		}
 	}
-
+	a {
+		color: $red-orange;
+	}
 	a:hover {
 		color: $link-hover;
 	}
@@ -64,15 +65,15 @@
 
 	article:nth-child(odd) {
 		background: $article1;
-		img {float: right;}
-		time{
-			float: left;}
+		p, h2, time, h3 {text-align: left;}
+		img, time {float: right;}
 	}
 	article:nth-child(even){
+
 		background: $article2;
-		img {float: left;}
-		time{
-			float: right;}
+		p, h2, time, h3 {text-align: right;}
+		img, time {float: left;}
+
 	}
 
 	.content {
@@ -80,27 +81,37 @@
 		margin: 0 auto;
 		width: 100%;
 		@include media($papa-bear);
-			width: 100%;
+			width: 95%;
 	}
 
 	img {
-
+		padding: 20px;
 		@include media($mama-bear) {
-			display: none;
+			height: 100px;
+			width: 100px
+
 
 
 		}
 	}
 	p {
 		padding: 20px;
-		text-align: center;
-		font-weight: 700;
-		font-size: 1.5em;
+		font-weight: 500;
+		font-size: 1em;
 		@include padding(15px null 5px null);
 		@include media($mama-bear){
 			font-size: 1em;
 			padding: 10px;
 		}
 	}
+	
+}
 
+.pagination {
+	font-size: 1.3em;
+	font-weight: 700;
+	height: 70px;
+	display: block;
+	text-align: center;
+	margin-top: 1em;
 }

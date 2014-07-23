@@ -1,24 +1,20 @@
 	<footer>
-	Test
+	Leigh Johnson // Nuwen 2014
 
 	</footer>
 	</main> <!-- cd-main-content -->
 
 	<nav id="cd-lateral-nav">
+		<ul class="cd-navigation cd-single-item-wrapper nav-emphasis">
+			<?php while(menu_items()): ?>
+				<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+				<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+					<?php echo menu_name(); ?>
+				</a>
+				</li>
+			<?php endwhile; ?>
+		</ul> <!-- cd-single-item-wrapper -->
 		<ul class="cd-navigation">
-			<li class="item-has-children">
-				<a href="#0">Pages</a>
-				<ul class="sub-menu">
-					<?php while(menu_items()): ?>
-					<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-					<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
-						<?php echo menu_name(); ?>
-					</a>
-					</li>
-					<?php endwhile; ?>
-				</ul>
-			</li> <!-- item-has-children -->
-
 			<li class="item-has-children">
 				<a href="#0">Articles</a>
 				<ul class="sub-menu">
@@ -44,15 +40,7 @@
 		</ul> <!-- cd-navigation -->
 
 		<ul class="cd-navigation cd-single-item-wrapper">
-			<li><a href="#0">Tour</a></li>
-			<li><a href="#0">Login</a></li>
-			<li><a href="#0">Register</a></li>
-			<li><a href="#0">Pricing</a></li>
-			<li><a href="#0">Support</a></li>
-		</ul> <!-- cd-single-item-wrapper -->
-
-		<ul class="cd-navigation cd-single-item-wrapper">
-			<li><a class="current" href="#0">Journal</a></li>
+			<li><a href="#0">Journal</a></li>
 			<li><a href="#0">FAQ</a></li>
 			<li><a href="#0">Terms &amp; Conditions</a></li>
 			<li><a href="#0">Careers</a></li>

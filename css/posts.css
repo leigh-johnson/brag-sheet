@@ -7,6 +7,8 @@ h1, #posts-container h2 {
   font-family: 'Titillium Web', sans-serif !important; }
 
 h1 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px rgba(214, 146, 91, 0.7);
   text-align: center;
   font-weight: 700;
   font-size: 2em;
@@ -14,8 +16,7 @@ h1 {
 
 #posts-container {
   margin: 0 auto;
-  background: rgba(225, 225, 225, 0.6);
-  margin-bottom: 95px;
+  margin-bottom: 70px;
   width: 80%; }
   @media screen and (max-width: 700px) {
     #posts-container {
@@ -23,21 +24,16 @@ h1 {
   #posts-container time {
     font-size: 1em;
     font-weight: 700; }
-    #posts-container time:after {
-      content: "";
-      display: table;
-      clear: both; }
     @media screen and (max-width: 500px) {
       #posts-container time {
         font-weight: 400; } }
-    #posts-container time .read-time {
-      position: absolute;
-      bottom: 0;
-      left: 0; }
+  #posts-container .read-time {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 100%; }
   #posts-container h2 {
+    text-transform: uppercase;
     padding: 20px;
-    text-align: center;
-    color: #fff;
     font-weight: 700;
     font-size: 2em; }
     @media screen and (max-width: 500px) {
@@ -45,8 +41,10 @@ h1 {
         font-size: 1.5em;
         font-weight: 600;
         padding: 10px; } }
+  #posts-container a {
+    color: rgba(215, 105, 89, 0.8); }
   #posts-container a:hover {
-    color: #bfba72; }
+    color: rgba(255, 255, 255, 0.6); }
   #posts-container article {
     text-align: center;
     line-height: 280%;
@@ -62,33 +60,43 @@ h1 {
         padding: 10px;
         line-height: 150%; } }
   #posts-container article:nth-child(odd) {
-    background: #bfba72; }
-    #posts-container article:nth-child(odd) img {
+    background: rgba(215, 105, 89, 0.2); }
+    #posts-container article:nth-child(odd) p, #posts-container article:nth-child(odd) h2, #posts-container article:nth-child(odd) time, #posts-container article:nth-child(odd) h3 {
+      text-align: left; }
+    #posts-container article:nth-child(odd) img, #posts-container article:nth-child(odd) time {
       float: right; }
-    #posts-container article:nth-child(odd) time {
-      float: left; }
   #posts-container article:nth-child(even) {
-    background: #72b9bf; }
-    #posts-container article:nth-child(even) img {
+    background: rgba(214, 146, 91, 0.2); }
+    #posts-container article:nth-child(even) p, #posts-container article:nth-child(even) h2, #posts-container article:nth-child(even) time, #posts-container article:nth-child(even) h3 {
+      text-align: right; }
+    #posts-container article:nth-child(even) img, #posts-container article:nth-child(even) time {
       float: left; }
-    #posts-container article:nth-child(even) time {
-      float: right; }
   #posts-container .content {
     line-height: 200%;
     margin: 0 auto;
     width: 100%;
-    width: 100%; }
-  @media screen and (max-width: 500px) {
-    #posts-container img {
-      display: none; } }
+    width: 95%; }
+  #posts-container img {
+    padding: 20px; }
+    @media screen and (max-width: 500px) {
+      #posts-container img {
+        height: 100px;
+        width: 100px; } }
   #posts-container p {
     padding: 20px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.5em;
+    font-weight: 500;
+    font-size: 1em;
     padding-top: 15px;
     padding-bottom: 5px; }
     @media screen and (max-width: 500px) {
       #posts-container p {
         font-size: 1em;
         padding: 10px; } }
+
+.pagination {
+  font-size: 1.3em;
+  font-weight: 700;
+  height: 70px;
+  display: block;
+  text-align: center;
+  margin-top: 1em; }

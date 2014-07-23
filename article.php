@@ -1,4 +1,22 @@
 <?php theme_include('header'); ?>
+		<meta property="og:type" content="Brag Sheet">
+		<meta property="og:site_name" content="<?php echo article_title(); ?> - <?php echo site_name(); ?>">
+		<?php if(is_homepage() == true) : ?>
+			<meta property="og:url" content="http://sandbox.leighjohnson.me/brag-sheet">
+			<meta property="og:title" content="<?php echo site_name(); ?>">
+			<meta property="og:description" content="<?php echo site_description(); ?>">
+		<?php else: ?>
+			<meta property="og:url" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . current_url(); ?>">
+			<meta property="og:title" content="<?php <?php if(strlen(article_title())) : echo article_title();  else: echo site_description(); endif; ?> - <?php echo site_name(); ?>">
+			<meta property="og:description" content="<?php if(strlen(article_description())) : echo article_description(); else: echo site_description(); endif; ?>">
+		<?php endif; ?>
+		<!-- If you have any image custom fields -->
+		<?php $thumbnail = article_custom_field('thumbnail');
+			if ( !empty($thumbnail) ) : ?>
+			<meta property="og:image" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . $thumbnail; ?>">
+		<?php else: ?>
+			<meta property="og:image" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . theme_url('img/logo.png'); ?>">
+		<?php endif; ?>
 	<link href="<?php echo theme_url('css/article.css'); ?>"  rel="stylesheet" media="screen">
 
 	<div id="article-container">

@@ -5,15 +5,14 @@
 		
 		<section class="content">
 			<?php if(has_posts()) : while(posts()) : ?>
-				<article>
-					<figure><img src="<?php echo article_custom_field('thumbnail');?>"></img></figure> 
-					<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
-
-					<h2>
-			        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-			        </h2>
-			        <p><?php echo article_description(); ?></p>
+				<article><figure><img src="<?php echo article_custom_field('thumbnail');?>"></img></figure> 
+					<h2><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a></h2>
 			        <h3 class="read-time">Read Time: <?php echo reading_time(article_html()); ?></h3>
+			        <p><?php echo article_description(); ?></p>
+			        <p><a href="<?php echo article_url(); ?>">(Read More)</a></p>
+			        <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
+			        <div class="fb-share-button" data-href="<?php echo article_url(); ?>"></div>
+
 				</article>
 			<?php endwhile; endif; ?>
 		</section>
@@ -27,5 +26,5 @@
 			<?php endif; ?>
 		</section>
 		</div>
-
+		
 <?php theme_include('footer'); ?>

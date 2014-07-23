@@ -12,29 +12,36 @@ $papa-bear: new-breakpoint(max-width 700px);
 $mobile: new-breakpoint(max-width 500px 4);
 
 // variables - colors
+
+// 1971 http://www.colourlovers.com/palette/3429734/1971
 //Sky palette
 
 $light-green: rgb(114, 185, 191);
 $light-yellow: rgb(191, 186, 114);
 $light-blue: rgb(114, 163, 191);
 $light-purple: rgb(114, 115, 191);
+$red-orange: rgba(215,105,89, 0.8);
 
 // posts & articles
-$article1: $light-yellow;
-$article2: $light-green;
+$h1: rgba(#fff, 0.8);
+$h1-shadow: rgba(214,146,91, .7);
+$page-h1: $red-orange;
+$article1: rgba(215,105,89, 0.2);
+$article2: rgba(214,146,91, 0.2);
 
 
 // general
-$main-text: #fff; // main text
+$main-text: rgba(13,60,92, 0.8); // main text
 $link: $light-blue; // anchor tags
-$link-hover: $light-yellow;
+$link-hover: rgba(#fff, 0.6);
 $background-color: rgba(225, 225, 225, 0.9); // body background color
 $bg-img: $light-wood;
 
 
 // nav colors
+$nav-emphasis: rgba(214,146,91, 0.9);
 $color-1: $light-blue; // dark
-$color-2: #2C3E50; // darker
+$color-2: rgba(13,60,92, 0.8); // darker
 $color-3: #59ABE3; // light
 
 // Fonts - Usage: https://github.com/penman/Sass-Web-Fonts
@@ -57,7 +64,7 @@ $header-S: 50px;
 $header-M: 70px;
 
 // footer margin applied to various content containers for push
-$footer-margin: 95px;
+$footer-margin: 70px;
 // Some pretty color samples
 
 
