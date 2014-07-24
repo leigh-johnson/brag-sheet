@@ -3,7 +3,7 @@
 @import "partials/variables";
 
 
-#posts-container {
+#posts-container, #article-container {
 	margin: 0 auto;
 	margin-bottom: $footer-margin;
 	width: 80%;
@@ -24,12 +24,17 @@
 		font-weight: 700;
 		@include media($mama-bear) {
 			font-weight: 400;
+			font-size: 0.8em;
 		}
 	}
 	.read-time {
 		padding-left: 20px;
 		padding-right: 20px;
 		line-height: 100%;
+		@include media($mama-bear) {
+			font-weight: 400;
+			font-size: 0.8em;
+		}
 	}
 
 	h2 {
@@ -111,6 +116,7 @@
 		@include media($mama-bear){
 			font-size: 1em;
 			padding: 10px;
+			text-align: center !important;
 		}
 	}
 	

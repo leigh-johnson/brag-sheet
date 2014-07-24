@@ -246,6 +246,7 @@ header h1 {
 
 #cd-lateral-nav {
 	@extend %heading-font;
+	list-style: none;
 	position: fixed;
 	height: 100%;
 	right: 0;
@@ -374,7 +375,7 @@ header h1 {
 		}
 
 		.no-touch &:hover {
-			background-color: $color-1;
+			background-color: $nav-emphasis;
 
 			&.cd-twitter {
 				background-position: 0 -32px;

@@ -40,11 +40,10 @@
 		</ul> <!-- cd-navigation -->
 
 		<ul class="cd-navigation cd-single-item-wrapper">
-			<li><a href="#0">Journal</a></li>
-			<li><a href="#0">FAQ</a></li>
-			<li><a href="#0">Terms &amp; Conditions</a></li>
-			<li><a href="#0">Careers</a></li>
-			<li><a href="#0">Students</a></li>
+			<li><a href="#0">Single item</a></li>
+			<li><a href="#0">Single item</a></li>
+			<li><a href="#0">Single item</a></li>
+			<li><a href="#0">Single item</a></li>
 		</ul> <!-- cd-single-item-wrapper -->
 
 		<div class="cd-navigation socials">
