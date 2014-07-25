@@ -361,8 +361,8 @@ th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-hmgpci");
-  src: url("../fonts/icomoon.eot?#iefix-hmgpci") format("embedded-opentype"), url("../fonts/icomoon.woff?-hmgpci") format("woff"), url("../fonts/icomoon.ttf?-hmgpci") format("truetype"), url("../fonts/icomoon.svg?-hmgpci#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-gq1ely");
+  src: url("../fonts/icomoon.eot?#iefix-gq1ely") format("embedded-opentype"), url("../fonts/icomoon.woff?-gq1ely") format("woff"), url("../fonts/icomoon.ttf?-gq1ely") format("truetype"), url("../fonts/icomoon.svg?-gq1ely#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -380,11 +380,11 @@ th {
 .icon-mug:before {
   content: "\e609"; }
 
+.icon-cancel:before {
+  content: "\e60b"; }
+
 .icon-layout:before {
   content: "\e60a"; }
-
-.icon-forward:before {
-  content: "\e60b"; }
 
 .icon-facebook:before {
   content: "\e601"; }
@@ -771,11 +771,36 @@ footer {
 
 #footer-container {
   width: 80%; }
+  #footer-container p {
+    text-align: center; }
 
 .go-top {
+  display: none;
   font-size: 4em;
   position: fixed;
-  bottom: 1.1em;
-  left: 1.1em;
+  bottom: 5px;
+  left: 25px;
   text-decoration: none;
   color: rgba(215, 105, 89, 0.8); }
+  @media screen and (max-width: 500px) {
+    .go-top {
+      bottom: 70px; } }
+
+.alert-right {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: none;
+  width: 15em;
+  height: 30em;
+  background: rgba(225, 225, 225, 0.5);
+  position: fixed;
+  bottom: 15em;
+  right: 0; }
+
+.alert-close {
+  top: 0;
+  right: 0;
+  font-size: 2.5em; }
+
+.dismissed {
+  display: none; }

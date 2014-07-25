@@ -12,14 +12,45 @@ footer {
 // #footer-container exists so margins can hold content e.g. .go-top
 #footer-container {
 	width: 80%;
+	p {
+		text-align: center;
+	}
 }
 
 
 .go-top {
+	display: none;
 	font-size: 4em;
 	position: fixed;
-	bottom: 1.1em;
-	left: 1.1em;
+	bottom: 5px;
+	left: 25px;
 	text-decoration: none;
 	color: $red-orange;
+	@include media($mama-bear) {
+		bottom: $footer-margin;
+	}
+}
+
+.alert-right {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	display: none;
+	width: 15em;
+	height: 30em;
+	background: $glass;
+	position: fixed;
+	bottom: 15em;
+	right: 0;
+}
+
+
+
+.alert-close {
+	top: 0;
+	right: 0;
+	font-size: 2.5em;
+}
+
+.dismissed {
+	display: none;
 }
