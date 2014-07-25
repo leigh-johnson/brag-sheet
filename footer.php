@@ -1,6 +1,8 @@
 	<footer>
+	<a href="#" class="go-top icon-arrow-up"></a>
+	<div id="footer-container">
 	Leigh Johnson // Nuwen 2014
-
+	</div>
 	</footer>
 	</main> <!-- cd-main-content -->
 
@@ -40,12 +42,13 @@
 		</ul> <!-- cd-navigation -->
 
 		<ul class="cd-navigation cd-single-item-wrapper">
-			<li><a href="#0">Single item</a></li>
+			<li><a href="#0">Login</a></li>
 			<li><a href="#0">Single item</a></li>
 			<li><a href="#0">Single item</a></li>
 			<li><a href="#0">Single item</a></li>
 		</ul> <!-- cd-single-item-wrapper -->
-
+		<form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">
+      				</form>
 		<div class="cd-navigation socials">
 			<a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
 			<a class="cd-github cd-img-replace" href="#0">Git Hub</a>
@@ -54,5 +57,25 @@
 		</div> <!-- socials -->
 	</nav>
 	<script src="<?php echo theme_url('js/navigation.js'); ?>"></script>
+
+	<script>
+	$(document).ready(function() {
+			// Show or hide the sticky footer buttons
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
 	</body>
 </html>

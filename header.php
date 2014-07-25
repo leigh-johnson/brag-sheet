@@ -33,7 +33,7 @@
 			<meta property="og:title" content="<?php echo article_title(); ?> - <?php echo site_name(); ?>">
 			<meta property="og:description" content="<?php echo article_description(); ?>">
 		<?php endif; ?>
-		<!-- If you have any image custom fields -->
+		<!-- article thumbnail for social shares, otherwise logo -->
 		<?php $thumbnail = article_custom_field('thumbnail');
 			if ( !empty($thumbnail) ) : ?>
 			<meta property="og:image" content="<?php echo "http://sandbox.leighjohnson.me/brag-sheet" . $thumbnail; ?>">
@@ -45,13 +45,10 @@
 	<body>
 	<main class="cd-main-content">
 		<header>
-			<a id="cd-logo" href="<?php echo full_url(); ?>"><h1><?php echo site_name();?></h1></a>
+			<a id="cd-logo" href="<?php echo full_url(); ?>"><h1><?php echo site_name();?></h1>
 			<nav id="cd-top-nav">
-				<ul>
-					<li><form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">
-      				</form></li>
-					<li><a href="#0">Login?</a></li>
-				</ul>
+				<!-- there is room for a top nav roll -->
+				<!-- ul -> li -->
 			</nav>
 			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</header>

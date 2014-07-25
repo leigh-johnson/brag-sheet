@@ -5,9 +5,21 @@ footer {
 	left: 0;
 	height: 70px;
 	width: 100%;
-	background: $color-1;
+	background: $header-bg;
 	@include clearfix;
 }
 
+// #footer-container exists so margins can hold content e.g. .go-top
+#footer-container {
+	width: 80%;
+}
 
 
+.go-top {
+	font-size: 4em;
+	position: fixed;
+	bottom: 1.1em;
+	left: 1.1em;
+	text-decoration: none;
+	color: $red-orange;
+}

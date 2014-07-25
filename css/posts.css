@@ -9,6 +9,7 @@
 #posts-container, #article-container {
   margin: 0 auto;
   margin-bottom: 70px;
+  max-width: 720px;
   width: 80%; }
   @media screen and (max-width: 700px) {
     #posts-container, #article-container {

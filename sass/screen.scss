@@ -5,12 +5,13 @@
 //$visual-grid-opacity: 0.1;
 @import "neat/neat";
 
-
+@import "partials/normalize";
+@import "partials/icons";
 @import "partials/variables";
 
 // The page-x and article-x styles should be better organized
 
 @import "base";
 @import "partials/header";
-@import "partials/normalize";
+
 @import "partials/footer";
