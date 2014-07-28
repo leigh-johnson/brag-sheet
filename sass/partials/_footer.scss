@@ -11,7 +11,6 @@ footer {
 
 // #footer-container exists so margins can hold content e.g. .go-top
 #footer-container {
-	width: 80%;
 	p {
 		text-align: center;
 	}
@@ -31,23 +30,48 @@ footer {
 	}
 }
 
-.alert-right {
+.alert-bottom {
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
 	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
 	display: none;
-	width: 15em;
-	height: 30em;
-	background: $glass;
+	width: 20em;
+	height: 65%;
+	background: $red-orange;
 	position: fixed;
-	bottom: 15em;
+	bottom: 0;
 	right: 0;
+	@include border-width(3px null null 3px);
+	@include border-style(solid null null solid);
+	@include border-color($light-blue-a null null $light-blue);
+
+	button {
+		background: $light-blue;
+		margin-left: 3.5em;
+	}
+
+	section {
+		float: left;
+		margin: 1em;
+		border-radius: 3px;
+		width: 95%;
+		padding: 20px;
+	}
+	
+	p {
+		color: $h1;
+		font-weight: 600;
+		font-size: 1.5em;
+	}
 }
 
-
-
 .alert-close {
+	color: $h1;
 	top: 0;
-	right: 0;
+	left: 0;
+	float: right;
 	font-size: 2.5em;
 }
 

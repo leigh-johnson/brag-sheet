@@ -1,12 +1,16 @@
 	<footer>
 	<a href="#" class="go-top icon-arrow-up"></a>
 
-	<div class="alert-right">
+	<div class="alert-bottom">
 		<a href="#"><div class="alert-close icon-cancel"></div></a>
-		<p>Buy Leigh a beer?</p>
-		<button>Yum</button>
-		Like this website? Get it:
-		<button>Download</button>
+		<section>	
+			<p>Like this template?</p>
+			<button>Download</button>
+		</section>
+		<section>
+			<p>Buy Leigh a beer?</p>
+			<button>Yum</button>
+		</section>
 	</div>
 	<div id="footer-container">
 	<p>Leigh Johnson // Nuwen 2014</p>
@@ -66,35 +70,6 @@
 	</nav>
 	<script src="<?php echo theme_url('js/navigation.js'); ?>"></script>
 
-	<script>
-	$(document).ready(function() {
-			// Show or hide the sticky footer buttons
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 150) {
-					$('.go-top').fadeIn(200);
-					//don't display the alert if its been dismissed
-					if (!$('.alert-right').hasClass('dismissed')) {
-						$('.alert-right').fadeIn(200);
-					}
-				} else {
-					$('.alert-right').fadeOut(200);
-					$('.go-top').fadeOut(200);
-				}
-			});
-
-			$('.alert-close').click(function(){
-				$('.alert-right').fadeOut(200);
-				$('.alert-right').addClass('dismissed');	
-				return false;
-			});
-			
-			// Animate the scroll to top
-			$('.go-top').click(function(event) {
-				event.preventDefault();
-				
-				$('html, body').animate({scrollTop: 0}, 300);
-			})
-		});
-	</script>
+	<script src="<?php echo theme_url('js/shame.js'); ?>"></script>
 	</body>
 </html>

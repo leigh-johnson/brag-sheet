@@ -35,12 +35,6 @@ button {
 	width: 8em;
 	text-align: center;
 	padding: 10px;
-	@include media($mobile){
-		padding: 0;
-		width: 5em;
-		}
-}
-button {
 	display: block;
 	text-decoration: none;
 	background: rgba(0, 0, 0, 0.3);
@@ -48,6 +42,8 @@ button {
 	padding: 10px;
 	margin-bottom: 1px;
 	@include media($mobile){
+		padding: 0;
+		width: 5em;
 		width: auto;
 		height: auto;
 		padding: 10px;

@@ -11,7 +11,6 @@
 			        <p><?php echo article_description(); ?></p>
 			        <p><a href="<?php echo article_url(); ?>">(Read More)</a></p>
 			        <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
-			        <div class="fb-share-button" data-href="<?php echo article_url(); ?>"></div>
 
 				</article>
 			<?php endwhile; endif; ?>
