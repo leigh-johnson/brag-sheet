@@ -454,8 +454,7 @@ button {
   @media screen and (max-width: 500px) {
     button {
       padding: 0;
-      width: 5em;
-      width: auto;
+      width: 100%;
       height: auto;
       padding: 10px; } }
 
@@ -511,12 +510,16 @@ header {
       height: 70px; } }
 
 header h1 {
+  line-height: 100%;
   position: absolute;
-  left: 40%;
+  text-align: center;
   text-transform: uppercase;
   font-size: 2em;
   color: rgba(255, 255, 255, 0.8);
   margin: 0.5em; }
+  @media screen and (max-width: 500px) {
+    header h1 {
+      line-height: 20%; } }
 header img {
   position: absolute;
   top: 50px;
@@ -788,7 +791,7 @@ footer {
   border-top-right-radius: 10px;
   display: none;
   width: 20em;
-  height: 65%;
+  height: 60%;
   background: rgba(215, 105, 89, 0.8);
   position: fixed;
   bottom: 0;
@@ -797,27 +800,41 @@ footer {
   border-left-width: 3px;
   border-top-style: solid;
   border-left-style: solid;
-  border-top-color: rgba(114, 163, 191, 0.7);
-  border-left-color: #72a3bf; }
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-left-color: rgba(255, 255, 255, 0.8); }
   .alert-bottom button {
     background: #72a3bf;
     margin-left: 3.5em; }
   .alert-bottom section {
     float: left;
-    margin: 1em;
+    margin: 0.5em;
     border-radius: 3px;
     width: 95%;
     padding: 20px; }
   .alert-bottom p {
+    text-align: center;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
     font-size: 1.5em; }
+  @media screen and (max-width: 500px) {
+    .alert-bottom {
+      width: 100%;
+      border-top-width: 3px;
+      border-top-style: solid;
+      border-top-color: rgba(255, 255, 255, 0.8); }
+      .alert-bottom p {
+        font-size: 0.8em; }
+      .alert-bottom section {
+        padding: 2px;
+        margin-top: 10px; }
+      .alert-bottom button {
+        width: 100%;
+        margin: 0 auto; } }
 
 .alert-close {
   color: rgba(255, 255, 255, 0.8);
   top: 0;
   left: 0;
-  float: right;
   font-size: 2.5em; }
 
 .dismissed {

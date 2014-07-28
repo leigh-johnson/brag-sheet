@@ -43,8 +43,7 @@ button {
 	margin-bottom: 1px;
 	@include media($mobile){
 		padding: 0;
-		width: 5em;
-		width: auto;
+		width: 100%;
 		height: auto;
 		padding: 10px;
 		}

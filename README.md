@@ -47,6 +47,6 @@
 * screen.scss -> screen.css // Contains global styles, grid system, variables, and mixins
 * page-$name.scss -> page-$name.css // Modular styles for page templates; e.g. page-about.css contains all styles for page-about.php
 * _variables.scss // Contains style variables. Variable names describe styled element e.g. $comment-color, $comment-color-focus, $link, $link-hover.
-* Drawer navigation requires all content to be nested between <main> tags, which open in header.php and close in footer.php. 
+* Drawer navigation requires all content to be nested between '''<main> ''' tags, which open in header.php and close in footer.php. 
 * Call to action styles are located in _footer.scss & footer.php
 * To swap between preset color palettes...
