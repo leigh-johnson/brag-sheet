@@ -417,6 +417,7 @@ body, html {
   font-family: 'Glegoo', serif !important; }
 
 header, #cd-lateral-nav {
+  text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif !important; }
 
 *, *:after, *:before {
@@ -772,6 +773,8 @@ footer {
   text-align: center; }
 
 .go-top {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   display: none;
   font-size: 4em;
   position: fixed;
@@ -781,16 +784,20 @@ footer {
   color: rgba(215, 105, 89, 0.8); }
   @media screen and (max-width: 500px) {
     .go-top {
-      bottom: 70px; } }
+      bottom: 70px;
+      left: 5px; } }
 
 .alert-bottom {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   overflow: hidden;
   display: block;
   margin: 0 auto;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-right-radiSus: 10px;
   display: none;
   width: 20em;
+  max-height: 60%;
   height: 60%;
   background: rgba(215, 105, 89, 0.8);
   position: fixed;
@@ -805,6 +812,8 @@ footer {
   .alert-bottom button {
     background: #72a3bf;
     margin-left: 3.5em; }
+  .alert-bottom button:hover {
+    background: #95bacf; }
   .alert-bottom section {
     float: left;
     margin: 0.5em;
@@ -836,6 +845,9 @@ footer {
   top: 0;
   left: 0;
   font-size: 2.5em; }
+
+.alert-close:hover {
+  color: rgba(255, 255, 255, 0.8); }
 
 .dismissed {
   display: none; }

@@ -2,6 +2,7 @@
 
 
 //assets
+
 // backgrounds - values for $bg-img
 $light-wood: "../img/bg_wood.png";
 //Breakpoints
@@ -66,6 +67,7 @@ $color-3: #59ABE3; // light
 	font-family: 'Glegoo', serif !important;
 }
 %heading-font {
+	text-transform: uppercase;
 	font-family: 'Titillium Web', sans-serif !important;
 }
 

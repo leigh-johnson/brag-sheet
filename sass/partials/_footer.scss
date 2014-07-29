@@ -16,8 +16,12 @@ footer {
 	}
 }
 
-
+// Fixed positioning required minor hackery in webkit browsers.
+// I haven't included an Opera fix, but here is a possibility: http://stackoverflow.com/a/15203880
 .go-top {
+	// force re-draw for fixed positioning
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	display: none;
 	font-size: 4em;
 	position: fixed;
@@ -27,17 +31,22 @@ footer {
 	color: $red-orange;
 	@include media($mama-bear) {
 		bottom: $footer-margin;
+		left: 5px;
 	}
 }
 
 .alert-bottom {
+	//fore re-draw for fixed positioning
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	overflow: hidden;
 	display: block;
 	margin: 0 auto;
 	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-right-radiSus: 10px;
 	display: none;
 	width: 20em;
+	max-height: 60%;
 	height: 60%;
 	background: $red-orange;
 	position: fixed;
@@ -50,6 +59,10 @@ footer {
 	button {
 		background: $light-blue;
 		margin-left: 3.5em;
+	}
+
+	button:hover{
+		background: lighten($light-blue, 10%);
 	}
 
 	section {
@@ -90,6 +103,10 @@ footer {
 	top: 0;
 	left: 0;
 	font-size: 2.5em;
+}
+
+.alert-close:hover {
+	color: lighten($h1, 10%);
 }
 
 .dismissed {
