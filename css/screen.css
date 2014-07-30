@@ -773,11 +773,12 @@ footer {
   text-align: center; }
 
 .go-top {
-  -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  z-index: 999;
   display: none;
   font-size: 4em;
-  position: fixed;
+  position: fixed !important;
   bottom: 5px;
   left: 25px;
   text-decoration: none;
@@ -790,17 +791,18 @@ footer {
 .alert-bottom {
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  z-index: 999;
   overflow: hidden;
   display: block;
   margin: 0 auto;
   border-top-left-radius: 10px;
-  border-top-right-radiSus: 10px;
+  border-top-right-radius: 10px;
   display: none;
   width: 20em;
   max-height: 60%;
   height: 60%;
   background: rgba(215, 105, 89, 0.8);
-  position: fixed;
+  position: fixed !important;
   bottom: 0;
   right: 0;
   border-top-width: 3px;

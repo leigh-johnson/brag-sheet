@@ -1,4 +1,12 @@
 	<footer>
+	<div id="footer-container">
+	<p>Leigh Johnson // Nuwen 2014</p>
+	</div>
+	</footer>
+	</main> <!-- cd-main-content -->
+
+	<!-- position: fixed elements cannot be nested in <main> // parent with transition/transform effects -->
+	<!-- because Webkit is affected by bug https://bugs.webkit.org/show_bug.cgi?id=110478 -->
 	<a href="#" class="go-top icon-arrow-up"></a>
 
 	<div class="alert-bottom">
@@ -12,12 +20,6 @@
 			<button>Yum</button>
 		</section>
 	</div>
-	<div id="footer-container">
-	<p>Leigh Johnson // Nuwen 2014</p>
-	</div>
-	</footer>
-	</main> <!-- cd-main-content -->
-
 	<nav id="cd-lateral-nav">
 		<ul class="cd-navigation cd-single-item-wrapper nav-emphasis">
 			<?php while(menu_items()): ?>
