@@ -51,4 +51,8 @@ function reading_time($post_content) {
 	return $est;
 }
 
+function count_comments() {
+	return Comment::where('post', '=', article_id())->count();
+}
+
 ?>

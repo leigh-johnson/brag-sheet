@@ -25,15 +25,15 @@
 			<?php echo comment_form_input_email('placeholder="Your Email" rows=1', $extra = ''); ?>
 			</p>
 			<p class="textarea comment-input"><label for="text"><span class="icon-pencil"></span></label>
-			<?php echo comment_form_input_text('placeholder="Your comment", rows=5'); ?>
+			<?php echo comment_form_input_text('placeholder="Your comment"'); ?>
 			</p>
 			<p class="submit">
-				<?php echo comment_form_button($text = 'Post Comment', $extra = ''); ?>
+				<?php echo comment_form_button($text = 'Submit', $extra = ''); ?>
 			</p>	
 		</form>
 		</div>
 	
-	<button id="show-comments">Show Comments</button>
+	<button id="show-comments">Show Comments (<?php echo count_comments(); ?>)</button>
 		<section class="comments">
 			<?php endif; ?>
 			<!-- Comment List -->
