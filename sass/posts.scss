@@ -5,9 +5,8 @@
 
 #posts-container, #article-container {
 	margin: 0 auto;
-	margin-bottom: $footer-margin;
 	max-width: 720px;
-	width: 80%;
+	width: 86%;
 	@include media($papa-bear) {
 		width: 100%;
 	}

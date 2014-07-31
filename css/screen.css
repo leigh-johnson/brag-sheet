@@ -413,10 +413,22 @@ th {
 .icon-safari:before {
   content: "\e608"; }
 
+.icon-pencil:before {
+  content: "\e60d"; }
+
+.icon-envelope:before {
+  content: "\e60e"; }
+
+.icon-user:before {
+  content: "\e60f"; }
+
+.icon-download:before {
+  content: "\e60c"; }
+
 body, html {
   font-family: 'Glegoo', serif !important; }
 
-header, #cd-lateral-nav {
+header, #cd-lateral-nav, .alert-bottom {
   text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif !important; }
 
@@ -448,7 +460,7 @@ button {
   padding: 10px;
   display: block;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: #72a3bf;
   color: white;
   padding: 10px;
   margin-bottom: 1px; }
@@ -785,8 +797,10 @@ footer {
   color: rgba(215, 105, 89, 0.8); }
   @media screen and (max-width: 500px) {
     .go-top {
+      opacity: 0.7;
       bottom: 70px;
-      left: 5px; } }
+      left: 5px;
+      bottom: 5px; } }
 
 .alert-bottom {
   -webkit-transform: translateZ(0);
@@ -800,7 +814,7 @@ footer {
   display: none;
   width: 20em;
   max-height: 60%;
-  height: 60%;
+  height: 49%;
   background: rgba(215, 105, 89, 0.8);
   position: fixed !important;
   bottom: 0;
@@ -812,16 +826,18 @@ footer {
   border-top-color: rgba(255, 255, 255, 0.8);
   border-left-color: rgba(255, 255, 255, 0.8); }
   .alert-bottom button {
+    width: 40%;
+    font-size: 1.5em;
     background: #72a3bf;
-    margin-left: 3.5em; }
+    margin: 0 auto; }
   .alert-bottom button:hover {
     background: #95bacf; }
   .alert-bottom section {
     float: left;
-    margin: 0.5em;
     border-radius: 3px;
     width: 95%;
-    padding: 20px; }
+    padding: 20px;
+    margin: -1em auto; }
   .alert-bottom p {
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
@@ -829,16 +845,16 @@ footer {
     font-size: 1.5em; }
   @media screen and (max-width: 500px) {
     .alert-bottom {
+      height: 35%;
       width: 100%;
-      border-top-width: 3px;
-      border-top-style: solid;
-      border-top-color: rgba(255, 255, 255, 0.8); }
+      border-left: 0px; }
       .alert-bottom p {
         font-size: 0.8em; }
       .alert-bottom section {
         padding: 2px;
         margin-top: 10px; }
       .alert-bottom button {
+        font-size: auto;
         width: 100%;
         margin: 0 auto; } }
 
@@ -846,7 +862,8 @@ footer {
   color: rgba(255, 255, 255, 0.8);
   top: 0;
   left: 0;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  position: absolute; }
 
 .alert-close:hover {
   color: rgba(255, 255, 255, 0.8); }

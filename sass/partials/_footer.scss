@@ -22,7 +22,7 @@ footer {
 	// force re-draw for fixed positioning
 	-webkit-backface-visibility: hidden;
   	-webkit-transform: translateZ(0);
-  	
+
   	 z-index: 999;
 	display: none;
 	font-size: 4em;
@@ -32,12 +32,15 @@ footer {
 	text-decoration: none;
 	color: $red-orange;
 	@include media($mama-bear) {
+		opacity: 0.7;
 		bottom: $footer-margin;
 		left: 5px;
+		bottom: 5px;
 	}
 }
 
 .alert-bottom {
+	@extend %heading-font;
 	//fore re-draw for fixed positioning
 	-webkit-transform: translateZ(0);
 	-webkit-backface-visibility: hidden;
@@ -51,7 +54,7 @@ footer {
 	display: none;
 	width: 20em;
 	max-height: 60%;
-	height: 60%;
+	height: 49%;
 	background: $red-orange;
 	position: fixed !important;
 	bottom: 0;
@@ -61,8 +64,10 @@ footer {
 	@include border-color($h1 null null $h1);
 
 	button {
+		width: 40%;
+		font-size: 1.5em;
 		background: $light-blue;
-		margin-left: 3.5em;
+		margin: 0 auto;
 	}
 
 	button:hover{
@@ -71,10 +76,10 @@ footer {
 
 	section {
 		float: left;
-		margin: 0.5em;
 		border-radius: 3px;
 		width: 95%;
 		padding: 20px;
+		margin: -1em auto;
 	}
 	
 	p {
@@ -84,10 +89,9 @@ footer {
 		font-size: 1.5em;
 	}
 	@include media($mama-bear) {
+		height: 35%;
 		width: 100%;
-		@include border-width(3px null null null);
-		@include border-style(solid null null null);
-		@include border-color($h1 null null null);
+		border-left: 0px;
 		p{
 			font-size: 0.8em;
 		}
@@ -96,6 +100,7 @@ footer {
 			margin-top: 10px;
 		}
 		button {
+			font-size: auto;
 			width: 100%;
 			margin: 0 auto;
 		}
@@ -107,6 +112,7 @@ footer {
 	top: 0;
 	left: 0;
 	font-size: 2.5em;
+	position: absolute;
 }
 
 .alert-close:hover {

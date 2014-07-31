@@ -1,3 +1,5 @@
+// shame.js is the place for quickly-stashed code, to be sorted/organized later
+
 $(document).ready(function() {
 			// Show or hide the sticky footer buttons
 			$(window).scroll(function() {

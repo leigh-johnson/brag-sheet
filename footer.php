@@ -13,11 +13,11 @@
 		<a href="#"><div class="alert-close icon-cancel"></div></a>
 		<section>	
 			<p>Like this template?</p>
-			<button>Download</button>
+			<button class="icon-download"></button>
 		</section>
 		<section>
 			<p>Buy Leigh a beer?</p>
-			<button>Yum</button>
+			<button class="icon-mug">Downloa</button>
 		</section>
 	</div>
 	<nav id="cd-lateral-nav">

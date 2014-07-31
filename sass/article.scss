@@ -2,12 +2,16 @@
 @import "neat/neat";
 @import "partials/variables";
 
+
+button:hover {
+	background: lighten($button-color, 10%);
+}
 #show-comments {
 	margin: 2em auto;
 }
 .comments {
 	border-radius: 10px;
-	width: 80%;
+	width: 86%;
 	height: auto;
 	margin-bottom: $footer-margin;
 	@include media($mama-bear) {
@@ -43,25 +47,29 @@
 
 .form-container {
 	display: block;
-	margin: 1em auto;
+	margin: 0 auto;
 	background-color: $comment-container;
-	@include padding(35px, 35px, 50px, 35px );
+	@include padding(10px, 10px, 10px, 10px );
 	position: relative;
-	width: 50%;
+	width: 86%;
 	border-radius: 7px;
+
 
 }
 #comment {
-
+	span {
+		float: left;
+		font-size: 1.2em;
+	}
 	.comment-input {
+		height: auto;
+		margin: 1em auto;
 		color: $comment-color;
 		font-weight: 500;
 		line-height: 22px;
 		background-color: $comment-input;
-		margin-bottom: 10px;
-		width: 100%;
-		border: 3px solid rgba(0,0,0, 0);
-		@include padding(13px 13px 13px 54px);
+		width: 95%;
+		border: 3px solid rgba(0,0,0, 0.2);
 		@include box-sizing(border-box);
 
 	}
@@ -71,23 +79,20 @@
 		border: 3px solid $comment-focus-border;
 		color: $comment-color-focus;
 		outline: none;
-		@include padding(13px 13px 13px 54px);
 	}
 	.focused {
 		color: $focused;
 		border: $focused solid 3px;
 	}
-	.name {
-		background-image: ""; 
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
+
+	.name, .email {
+		float: left;
+		width: 45%;
 	}
-	.name:focus {}
-	.email {
-		background-image: "";
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
+	.textarea {}00000000
+	.submit {
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
 	}
 }
