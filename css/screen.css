@@ -455,7 +455,6 @@ body {
   position: relative; }
 
 button {
-  width: 8em;
   text-align: center;
   padding: 10px;
   display: block;
@@ -470,6 +469,9 @@ button {
       width: 100%;
       height: auto;
       padding: 10px; } }
+
+button:hover {
+  background: #95bacf; }
 
 .cd-img-replace {
   /* replace text with a background-image */

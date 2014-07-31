@@ -3,36 +3,39 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-button:hover {
-  background: #95bacf; }
-
-#show-comments {
-  margin: 2em auto; }
-  @media screen and (max-width: 500px) {
-    #show-comments {
-      width: 86%; } }
+#article-container {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important; }
 
 .comments {
-  border-radius: 10px;
-  width: 86%;
+  margin: 0 auto;
+  border-radius: 3px;
+  width: 95%;
   height: auto;
   margin-bottom: 70px; }
   @media screen and (max-width: 500px) {
     .comments {
       width: 100%; } }
   .comments p {
+    text-indent: 5em;
     width: 85%; }
   .comments h2 {
-    float: right;
-    text-align: right;
+    padding-left: 0.5em;
+    padding-top: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
     font-size: 2em;
     font-weight: 700; }
   .comments time {
-    float: right;
-    text-align: right; }
+    position: absolute;
+    bottom: 0;
+    right: 0.2em; }
   .comments section {
+    position: relative;
     margin: 2em auto;
-    border-radius: 10px; }
+    border-radius: 3px; }
   .comments section:nth-child(odd) {
     background: rgba(215, 105, 89, 0.2); }
   .comments section:nth-child(even) {
@@ -41,12 +44,13 @@ button:hover {
 .form-container {
   display: block;
   margin: 0 auto;
-  background-color: rgba(72, 72, 72, 0.4);
+  background-color: rgba(214, 146, 91, 0.2);
   padding: 10px;
   position: relative;
   height: auto;
   width: 95%;
-  border-radius: 7px; }
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 #comment {
   text-align: center;
@@ -65,8 +69,8 @@ button:hover {
     font-weight: 500;
     line-height: 22px;
     background-color: #fbfbfb;
-    width: 95%;
-    border: 3px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border: 3px solid rgba(114, 163, 191, 0.7);
     padding: 1em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -80,9 +84,13 @@ button:hover {
   #comment .focused {
     color: rgba(215, 105, 89, 0.8);
     border: rgba(215, 105, 89, 0.8) solid 3px; }
+  #comment .name {
+    padding-left: 1%; }
+  #comment .email {
+    border-left: 0px; }
   #comment .name, #comment .email {
     float: left;
-    width: 47.5%;
+    width: 50%;
     border-bottom: 0px; }
     #comment .name:after, #comment .email:after {
       content: "";
@@ -97,15 +105,16 @@ button:hover {
     display: table;
     clear: both; }
   #comment textarea {
+    min-height: 10em;
     width: 95%; }
     #comment textarea:after {
       content: "";
       display: table;
       clear: both; }
-  #comment .submit {
-    position: absolute;
-    bottom: 1em;
-    right: 1em; }
+  #comment .submit button, #comment #show-comments {
+    display: inline-block;
+    width: 30%;
+    bottom: 1em; }
     @media screen and (max-width: 500px) {
-      #comment .submit {
+      #comment .submit button, #comment #show-comments {
         width: 95%; } }

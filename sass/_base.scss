@@ -32,7 +32,6 @@ body {
 // Buttons
 
 button {
-	width: 8em;
 	text-align: center;
 	padding: 10px;
 	display: block;
@@ -48,3 +47,7 @@ button {
 		padding: 10px;
 		}
 	}
+
+button:hover {
+	background: lighten($button-color, 10%);
+}	

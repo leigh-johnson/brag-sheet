@@ -64,11 +64,11 @@
         padding: 10px;
         line-height: 150%; } }
   #posts-container article:first-child, #article-container article:first-child {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; }
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
   #posts-container article:last-child, #article-container article:last-child {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px; }
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
   #posts-container article:nth-child(odd), #article-container article:nth-child(odd) {
     background: rgba(215, 105, 89, 0.2); }
     #posts-container article:nth-child(odd) p, #posts-container article:nth-child(odd) h2, #posts-container article:nth-child(odd) time, #posts-container article:nth-child(odd) h3, #article-container article:nth-child(odd) p, #article-container article:nth-child(odd) h2, #article-container article:nth-child(odd) time, #article-container article:nth-child(odd) h3 {
@@ -111,4 +111,5 @@
   height: 70px;
   display: block;
   text-align: center;
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-bottom: 70px; }

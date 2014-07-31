@@ -29,12 +29,12 @@
 			</p>
 			<p class="submit">
 				<?php echo comment_form_button($text = 'Submit', $extra = ''); ?>
-			</p>	
+			</p>
+			<button id="show-comments">Comments (<?php echo count_comments(); ?>)</button>
 		</form>
 		</div>
 	
-	<button id="show-comments">Show Comments (<?php echo count_comments(); ?>)</button>
-		<section class="comments">
+			<section class="comments">
 			<?php endif; ?>
 			<!-- Comment List -->
 			<?php if(comments_open() and has_comments()): ?>

@@ -3,39 +3,43 @@
 @import "partials/variables";
 
 
-button:hover {
-	background: lighten($button-color, 10%);
+#article-container {
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
 }
-#show-comments {
-	margin: 2em auto;
-	@include media($mama-bear) {
-		width: 86%;
-	}
-}
+
 .comments {
-	border-radius: 10px;
-	width: 86%;
+	margin: 0 auto;
+	border-radius: 3px;
+	width: 95%;
 	height: auto;
 	margin-bottom: $footer-margin;
 	@include media($mama-bear) {
 		width: 100%;
 	}
 	p {
+		text-indent: 5em;
 		width: 85%;
 	}
 	h2 {
-		float: right;
-		text-align: right;
+		padding-left: 0.5em;
+		padding-top: 0;
+		padding-right: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
 		font-size: 2em;
 		font-weight: 700;
 	}
 	time {
-		float: right;
-		text-align: right;
+		position: absolute;
+		bottom: 0;
+		right: 0.2em;
 	}
 	section {
+		position: relative;
 		margin: 2em auto;
-		border-radius: 10px;
+		border-radius: 3px;
 
 	}
 	section:nth-child(odd) {
@@ -54,7 +58,9 @@ button:hover {
 	position: relative;
 	height: auto;
 	width: 95%;
-	border-radius: 7px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+
 
 
 }
@@ -78,8 +84,8 @@ button:hover {
 		font-weight: 500;
 		line-height: 22px;
 		background-color: $comment-input;
-		width: 95%;
-		border: 3px solid rgba(0,0,0, 0.2);
+		width: 100%;
+		border: 3px solid $light-blue-a;
 		@include padding(1em 1em 1em 1em);
 		@include box-sizing(border-box);
 
@@ -95,10 +101,15 @@ button:hover {
 		color: $focused;
 		border: $focused solid 3px;
 	}
-	.name {}
+	.name {
+		padding-left: 1%;
+	}
+	.email {
+		border-left: 0px;
+	}
 	.name, .email {
 		float: left;
-		width: 47.5%;
+		width: 50%;
 		border-bottom: 0px;
 		@include clearfix;
 		@include media($mama-bear) {
@@ -111,14 +122,16 @@ button:hover {
 	}
 	textarea {
 		@include clearfix;
+		min-height: 10em;
 		width: 95%;
 	}
-	.submit {
-		position: absolute;
+	.submit button, #show-comments {
+		display: inline-block;
+		width: 30%;
 		bottom: 1em;
-		right: 1em;
 		@include media($mama-bear) {
 			width: 95%;
 		}
 	}
+
 }
