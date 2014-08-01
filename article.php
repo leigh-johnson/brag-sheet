@@ -8,7 +8,7 @@
 		    	<h1><?php echo article_title(); ?></h1>
           		<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
 			  	<h3 class="article-time">Estimated read time: <?php echo reading_time(article_html()); ?> </h3>
-
+			  	<img src="<?php echo article_custom_field('thumbnail');?>"></img>
 			    <?php echo article_markdown(); ?>
 			    <?php echo article_custom_field('attribution'); ?>
 			</article>
@@ -34,16 +34,16 @@
 		</form>
 		</div>
 	
-			<section class="comments">
+		<section id="comments">
 			<?php endif; ?>
 			<!-- Comment List -->
 			<?php if(comments_open() and has_comments()): ?>
 			    <?php while(comments()): ?>
-			    	<section>
+			    	<article>
 			        <p><?php echo comment_text(); ?></p>
 			        <h2><?php echo comment_name(); ?></h2>
           			<time datetime="<?php echo date(DATE_W3C, comment_time()); ?>"><?php echo relative_time(comment_time()); ?></time>
-          			</section>
+          			</article>
 			    <?php endwhile; ?>
 			<?php endif; ?>
 			
@@ -52,9 +52,10 @@
 	</div>
 
 	<script>
-	$(document).ready(function(){
-		$("#show-comments").click(function(){
-			$(".comments").slideToggle();
+	$(document).ready(function(e){
+		$("#show-comments").click(function(event){
+			$("#comments").slideToggle("slow");
+			event.preventDefault();
 		});	
 	});
 	</script>

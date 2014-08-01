@@ -61,13 +61,15 @@
 			<li><a href="#0">Single item</a></li>
 			<li><a href="#0">Single item</a></li>
 		</ul> <!-- cd-single-item-wrapper -->
+		<div class="cd-navigation socials">
 		<form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">
       				</form>
-		<div class="cd-navigation socials">
-			<a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-			<a class="cd-github cd-img-replace" href="#0">Git Hub</a>
-			<a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
-			<a class="cd-google cd-img-replace" href="#0">Google Plus</a>
+			
+			<a href="https://github.com/Nuwen/"><span class="icon-github"></span></a>
+			<a href="https://www.facebook.com/nuwen"><span class="icon-facebook"></span></a>
+			<a href="http://gleighn.deviantart.com/"><span class="icon-deviantart"></span></a>
+			<a href="https://twitter.com/gleighn"><span class="icon-twitter"></span></a>
+			
 		</div> <!-- socials -->
 	</nav>
 	<script src="<?php echo theme_url('js/navigation.js'); ?>"></script>

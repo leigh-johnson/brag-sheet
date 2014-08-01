@@ -425,6 +425,15 @@ th {
 .icon-download:before {
   content: "\e60c"; }
 
+.icon-twitter:before {
+  content: "\e610"; }
+
+.icon-deviantart:before {
+  content: "\e611"; }
+
+.icon-arrow-right:before {
+  content: "\e612"; }
+
 body, html {
   font-family: 'Glegoo', serif !important; }
 
@@ -677,7 +686,8 @@ header img {
     margin: 10px 0 16px; }
   #cd-lateral-nav .sub-menu {
     padding: 0 10px 20px 15px;
-    display: none; }
+    display: none;
+    list-style: none; }
   #cd-lateral-nav .nav-emphasis a {
     color: rgba(214, 146, 91, 0.9); }
   #cd-lateral-nav a {
@@ -707,11 +717,11 @@ header img {
   font-weight: 600;
   /* this is the right arrow to show that the item has a submenu  */ }
   #cd-lateral-nav .item-has-children > a::after {
-    content: '';
-    display: block;
-    height: 11px;
-    width: 8px;
+    text-align: right;
+    font-family: 'icomoon';
+    content: "\e612";
     position: absolute;
+    right: 1em;
     top: 50%;
     bottom: auto;
     -webkit-transform: translateY(-50%);
@@ -719,9 +729,6 @@ header img {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 1em;
-    background: url("../img/cd-arrow-sec-exp-nav.svg") no-repeat center center;
-    background-size: 8px 11px;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
@@ -735,41 +742,28 @@ header img {
     -o-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotate(90deg); }
 
+#search input {
+  display: block;
+  margin: 1.5em auto; }
+
 #cd-lateral-nav .socials {
-  padding: 0 32px; }
+  display: block;
+  margin: 0 auto;
+  width: 95%; }
   #cd-lateral-nav .socials:after {
     content: "";
     display: table;
     clear: both; }
   #cd-lateral-nav .socials a {
-    height: 32px;
-    width: 32px;
-    float: left;
-    padding: 0;
-    background-image: url("../img/cd-socials.svg");
-    background-repeat: no-repeat;
-    background-size: 128px 64px;
-    background-color: #FFF;
-    margin-right: .5em;
+    line-height: 100%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
     border-radius: 0.25em; }
-    #cd-lateral-nav .socials a.cd-twitter {
-      background-position: 0 0; }
-    #cd-lateral-nav .socials a.cd-github {
-      background-position: -32px 0; }
-    #cd-lateral-nav .socials a.cd-facebook {
-      background-position: -64px 0; }
-    #cd-lateral-nav .socials a.cd-google {
-      background-position: -96px 0; }
     .no-touch #cd-lateral-nav .socials a:hover {
       background-color: rgba(214, 146, 91, 0.9); }
-      .no-touch #cd-lateral-nav .socials a:hover.cd-twitter {
-        background-position: 0 -32px; }
-      .no-touch #cd-lateral-nav .socials a:hover.cd-github {
-        background-position: -32px -32px; }
-      .no-touch #cd-lateral-nav .socials a:hover.cd-facebook {
-        background-position: -64px -32px; }
-      .no-touch #cd-lateral-nav .socials a:hover.cd-google {
-        background-position: -96px -32px; }
 
 footer {
   position: absolute;

@@ -87,11 +87,11 @@
     width: 100%;
     width: 95%; }
   #posts-container img, #article-container img {
-    padding: 20px; }
+    padding: 5px; }
     @media screen and (max-width: 500px) {
       #posts-container img, #article-container img {
-        height: 100px;
-        width: 100px; } }
+        height: 150px;
+        width: 150px; } }
   #posts-container p, #article-container p {
     text-indent: 35px;
     padding: 20px;

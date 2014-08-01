@@ -8,62 +8,81 @@
 	border-bottom-right-radius: 0px !important;
 }
 
-.comments {
+
+#comments {
 	margin: 0 auto;
 	border-radius: 3px;
 	width: 95%;
 	height: auto;
-	margin-bottom: $footer-margin;
 	@include media($mama-bear) {
 		width: 100%;
 	}
 	p {
+		text-align: left !important;
 		text-indent: 5em;
 		width: 85%;
+		@include media($mama-bear) {
+			font-size: 0.9em;
+		}
 	}
 	h2 {
 		padding-left: 0.5em;
 		padding-top: 0;
-		padding-right: 0;
+		padding-right: 0.5em;
 		position: absolute;
 		top: 0;
 		right: 0;
 		font-size: 2em;
 		font-weight: 700;
+		@include media($mama-bear) {
+			bottom: 0;
+			left: 0;
+			font-size: 1em;
+		}
 	}
 	time {
 		position: absolute;
 		bottom: 0;
 		right: 0.2em;
+
 	}
-	section {
+	time, h3 {
+		@include media($mama-bear) {
+			font-weight: 400;
+			font-size: 0.8em;
+		}
+	}
+	article {
 		position: relative;
 		margin: 2em auto;
 		border-radius: 3px;
 
 	}
-	section:nth-child(odd) {
+	article:nth-child(odd) {
 		background:$article1;
 	}
-	section:nth-child(even){
+	article:nth-child(even){
 		background: $article2;
+	}
+	article:last-child {
+		margin-bottom: $footer-margin+20px;
 	}
 }
 
 .form-container {
 	display: block;
 	margin: 0 auto;
-	background-color: $comment-container;
 	@include padding(10px, 10px, 10px, 10px );
 	position: relative;
 	height: auto;
 	width: 95%;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-
+	margin-bottom: $footer-margin+20px;
 
 
 }
+
 #comment {
 	text-align: center;
 	margin: 0 auto;

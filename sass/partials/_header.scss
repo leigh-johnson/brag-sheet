@@ -277,6 +277,7 @@ header {
 	/* this creates the subtle slide in animation of the navigation */
 	@include transform(translateX(80px));
 
+
 	.cd-navigation {
 		list-style: none;
 		margin: 10px 0 16px;
@@ -285,6 +286,7 @@ header {
 	.sub-menu {
 		padding: 0 10px 20px 15px;
 		display: none;
+		list-style: none;
 	}
 	.nav-emphasis a {
 		color: $nav-emphasis;
@@ -327,16 +329,12 @@ header {
 
 	/* this is the right arrow to show that the item has a submenu  */
 	&::after {
-		content: '';
-		display: block;
-		height: 11px;
-		width: 8px;
+		text-align: right;
+		font-family: 'icomoon';
+		content: "\e612";
 		position: absolute;
-		@include center(y);
 		right: 1em;
-		background: url('../img/cd-arrow-sec-exp-nav.svg') no-repeat center center;
-		background-size: 8px 11px;
-
+		@include center(y);
 		@include transition-property(transform);
 		@include transition-duration(.2s);
 	}
@@ -346,57 +344,28 @@ header {
 
 	}
 }
-
+	#search input {
+		display: block;
+		margin: 1.5em auto;
+	}
 #cd-lateral-nav .socials {
+	display: block;
+	margin: 0 auto;
+	width: 95%;
 	@include clearfix;
-	padding: 0 32px;
 
-	a {
-		height: 32px;
-		width: 32px;
-		float: left;
-		padding: 0;
-		background-image: url('../img/cd-socials.svg');
-		background-repeat: no-repeat;
-		background-size: 128px 64px;
-		background-color: #FFF;
-		margin-right: .5em;
+	a {	
+		line-height: 100%;
+		color: #fff;
+		display: inline-block;
+		text-align: center;
+		font-size: 2em;
+		padding: 10px;
+
 		@include border-radius;
-
-		&.cd-twitter {
-			background-position: 0 0;
-		}
-
-		&.cd-github {
-			background-position: -32px 0;
-		}
-
-		&.cd-facebook {
-			background-position: -64px 0;
-		}
-
-		&.cd-google {
-			background-position: -96px 0;
-		}
-
 		.no-touch &:hover {
 			background-color: $nav-emphasis;
 
-			&.cd-twitter {
-				background-position: 0 -32px;
-			}
-
-			&.cd-github {
-				background-position: -32px -32px;
-			}
-
-			&.cd-facebook {
-				background-position: -64px -32px;
-			}
-
-			&.cd-google {
-				background-position: -96px -32px;
-			}
 		}
-	}
+}
 }

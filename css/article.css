@@ -7,50 +7,64 @@
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important; }
 
-.comments {
+#comments {
   margin: 0 auto;
   border-radius: 3px;
   width: 95%;
-  height: auto;
-  margin-bottom: 70px; }
+  height: auto; }
   @media screen and (max-width: 500px) {
-    .comments {
+    #comments {
       width: 100%; } }
-  .comments p {
+  #comments p {
+    text-align: left !important;
     text-indent: 5em;
     width: 85%; }
-  .comments h2 {
+    @media screen and (max-width: 500px) {
+      #comments p {
+        font-size: 0.9em; } }
+  #comments h2 {
     padding-left: 0.5em;
     padding-top: 0;
-    padding-right: 0;
+    padding-right: 0.5em;
     position: absolute;
     top: 0;
     right: 0;
     font-size: 2em;
     font-weight: 700; }
-  .comments time {
+    @media screen and (max-width: 500px) {
+      #comments h2 {
+        bottom: 0;
+        left: 0;
+        font-size: 1em; } }
+  #comments time {
     position: absolute;
     bottom: 0;
     right: 0.2em; }
-  .comments section {
+  @media screen and (max-width: 500px) {
+    #comments time, #comments h3 {
+      font-weight: 400;
+      font-size: 0.8em; } }
+  #comments article {
     position: relative;
     margin: 2em auto;
     border-radius: 3px; }
-  .comments section:nth-child(odd) {
+  #comments article:nth-child(odd) {
     background: rgba(215, 105, 89, 0.2); }
-  .comments section:nth-child(even) {
+  #comments article:nth-child(even) {
     background: rgba(214, 146, 91, 0.2); }
+  #comments article:last-child {
+    margin-bottom: 90px; }
 
 .form-container {
   display: block;
   margin: 0 auto;
-  background-color: rgba(214, 146, 91, 0.2);
   padding: 10px;
   position: relative;
   height: auto;
   width: 95%;
   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  border-bottom-right-radius: 3px;
+  margin-bottom: 90px; }
 
 #comment {
   text-align: center;
@@ -68,7 +82,7 @@
     color: #3c3c3c;
     font-weight: 500;
     line-height: 22px;
-    background-color: #fbfbfb;
+    background-color: rgba(225, 225, 225, 0.5);
     width: 100%;
     border: 3px solid rgba(114, 163, 191, 0.7);
     padding: 1em;

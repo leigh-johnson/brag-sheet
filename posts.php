@@ -8,6 +8,7 @@
 				<article><figure><img src="<?php echo article_custom_field('thumbnail');?>"></img></figure> 
 					<h2><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a></h2>
 			        <h3 class="read-time">Read Time: <?php echo reading_time(article_html()); ?></h3>
+			        <?php echo article_custom_field('thumbnail');?>
 			        <p><?php echo article_description(); ?></p>
 			        <p><a href="<?php echo article_url(); ?>">(Read More)</a></p>
 			        <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
