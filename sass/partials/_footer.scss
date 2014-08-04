@@ -1,5 +1,21 @@
 
-footer { 
+footer {
+	a{
+		color: $h1;
+	}
+	a:hover {
+		color: $red-orange;
+	} 
+	p {
+		display: block;
+		margin: 0 auto;
+		width: 70%;
+		line-height: 100%;
+		@include media($mama-bear) {
+			line-height: 100%;
+			font-size: 0.8em;
+		}
+	}
 	position: absolute;
 	bottom: 0;
 	left: 0;

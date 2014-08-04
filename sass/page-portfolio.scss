@@ -1,19 +1,21 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "partials/variables";
+@import "partials/magnific";
 
 
 
 //Necessary for MixItUp transitions
 
 .portfolio-item {
-	margin: auto auto;
-	min-height: 275px;
-	min-width: 275px;
-	@include span-columns(3, no-display);
-	@include media($mobile){
-		@include span-columns(4, no-display);
-	}
+	border-radius: 3px;
+	position: relative;
+	cursor: pointer;
+	display: none;
+	height: 255px;
+	width: 255px;
+	@include margin(1em 1em 1em 1em);
+
 }
 
 .yellow {
@@ -27,39 +29,114 @@
 }
 
 #filter-container {
-	width: 80%;
-	@include outer-container;
+	@extend %heading-font;
+	text-align: center;
+	width: 60%;
+	margin: 2em auto;
+	@include media($mama-bear) {
+		width: 50%;
+		button {
+			width: 100%;
+		}
+	}
 	button {
-		@include span-columns(1.5);
-		@include omega(4n);
-		margin: 0 auto;
-
+		display: inline-block;
+		width: 7em;
 	}
 }
 
 #portfolio-container {
-	border-radius: 10px;
-	background: $glass;
-	width: 80%;
-	@include margin(2em, auto, $footer-margin, auto);
-	@include pad();
-	@include outer-container;
-}
-
-.portfolio-item img {
 	margin: 0 auto;
+	text-align: center;
+	width: 85%;
+	margin-bottom: $footer-margin+10px;
+	@include clearfix;
+	@include media($baby-bear){
+		width: 50%;
+	}
 }
 
-.portfolio-item figure {
-	display: block;
-	position: relative;
-	overflow: hidden;
+// base styles
+.portfolio-item {
+	img {
+		position: relative;
+		display: block;
+		padding: 15px;
+		margin: 0 auto;
+	}
 
 }
-.portfolio-item figcaption {
-	display: none;
-}
 
-.portfolio-item figure:hover figcaption {
-	display: inline-block;
+
+// transitions & shinies
+
+#portfolio-container {
+
+	figure {
+		overflow: hidden;
+		margin: 1em;
+	}
+
+	figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		background: $red-orange;
+		color: #fff;
+	}
+
+	figcaption span:before {
+		content: "by ";
+	}
+
+	figcaption a {
+		text-align: center;
+		padding: 5px 10px;
+		display: inline-block;
+
+	}
+
+	figure img {
+		-webkit-transition: -webkit-transform 0.4s;
+		transition: transform 0.4s
+	}
+	figure:hover img {
+		transform: translateY(-50px);
+		-webkit-transform: translateY(-50px);
+	}
+	figcaption h2 {
+		position: absolute;
+		top: 0;
+		left: 10px;
+	}
+	figcaption p {
+		position: absolute;
+		bottom: 0;
+		left: 10px;
+	}
+	figcaption {
+		height: 100px;
+		width: 100%;
+		top: auto;
+		bottom: 0;
+		//opacity: 0;
+		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		transition: transform 0.4s, opacity 0.1s 0.3s;
+		-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	}
+	figure:hover figcaption {
+		opacity: 1;
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		transition: transform 0.4s, opacity 0.1s;
+		-webkit-transition: transform 0.4s, opacity 0.1s;
+	}
+
+	figcaption a {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
 }

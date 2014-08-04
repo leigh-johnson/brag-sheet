@@ -84,8 +84,7 @@
   #posts-container .content, #article-container .content {
     line-height: 120%;
     margin: 0 auto;
-    width: 100%;
-    width: 95%; }
+    width: 100%; }
   #posts-container img, #article-container img {
     padding: 5px; }
     @media screen and (max-width: 500px) {

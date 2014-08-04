@@ -1,31 +1,6 @@
 // credit to http://codepen.io/codyhouse/pen/Cpftw
 // mixins - center vertically and/or horizontally an absolute positioned element
 
-@mixin center($xy:xy) {
-  @if $xy == xy {
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    @include transform(translateX(-50%) translateY(-50%));
-  }
-  @else if $xy == x {
-    left: 50%;
-    right: auto;
-    @include transform(translateX(-50%));
-  }
-  @else if $xy == y {
-    top: 50%;
-    bottom: auto;
-    @include transform(translateY(-50%));
-  }
-}
-
-// mixins - border radius
-
-@mixin border-radius($radius:.25em) {
-  border-radius: $radius;
-}
 
 // layout - breakpoints
 
@@ -97,18 +72,45 @@ header {
 }
 
 header {
-	h1{
-		line-height: 100%;
-		position: absolute;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 2em;
-		color: $h1;
-		@include margin(0.5em, null null 0.5em);
-		@include media($mama-bear) {
-			line-height: 20%;
-		}
 
+	.icon-layout{
+		position: absolute;
+		top: 15px;
+		left: 5px;
+		font-size: 3em;
+		color: $h1;
+		float: left;
+		@include media($papa-bear) {
+			top: 3px;
+			left: 3px;
+		}
+	}
+	.bottom {
+		text-align: center;
+		h1 {font-size: 1em;}
+		bottom: 0;
+		@include media($mama-bear) {
+			display: none;
+		}
+	}
+	.top {
+		text-align: center;
+		@include clearfix;
+		@include media($mama-bear) {
+			font-size: 1em;	
+		}
+	}
+
+	h1 {
+		line-height: 80%;
+		margin: 10px auto;
+		display: inline-block;
+		@extend %heading-font;
+		color: $h1;
+		@include media($papa-bear) {
+			line-height: 70%;
+			font-size: 1.5em;
+		}
 	}
 	img {
 		position: absolute;
@@ -118,13 +120,13 @@ header {
 	}	
 }
 #cd-logo {
-
 	@include MQ(M) {
 		//margin: 22px 0 0 30px;
 	}
 }
 
 #cd-top-nav {
+	text-align: left !important;
 	position: absolute;
 	top: 0;
 	right: 120px;
@@ -251,6 +253,7 @@ header {
 
 #cd-lateral-nav {
 	@extend %heading-font;
+	font-weight: 600;
 	position: fixed;
 	height: 100%;
 	right: 0;
@@ -277,7 +280,12 @@ header {
 	/* this creates the subtle slide in animation of the navigation */
 	@include transform(translateX(80px));
 
-
+	ul{
+		padding-left: 0;
+	}
+	.active {
+		background: lighten($color-2, 10%);
+	}
 	.cd-navigation {
 		list-style: none;
 		margin: 10px 0 16px;
@@ -355,6 +363,7 @@ header {
 	@include clearfix;
 
 	a {	
+
 		line-height: 100%;
 		color: #fff;
 		display: inline-block;
@@ -362,9 +371,12 @@ header {
 		font-size: 2em;
 		padding: 10px;
 
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
 		@include border-radius;
-		.no-touch &:hover {
-			background-color: $nav-emphasis;
+		.no-touch, :hover {
+			color: $nav-emphasis;
 
 		}
 }

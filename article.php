@@ -30,7 +30,7 @@
 			<p class="submit">
 				<?php echo comment_form_button($text = 'Submit', $extra = ''); ?>
 			</p>
-			<button id="show-comments">Comments (<?php echo count_comments(); ?>)</button>
+			<button id="show-comments" href="#comments">Comments (<?php echo count_comments(); ?>)</button>
 		</form>
 		</div>
 	
@@ -51,11 +51,15 @@
 		</section>
 	</div>
 
+	// toggle comments & smoothly scroll
 	<script>
 	$(document).ready(function(e){
 		$("#show-comments").click(function(event){
 			$("#comments").slideToggle("slow");
 			event.preventDefault();
+			$("body, html").animate({ 
+            scrollTop: $( $(this).attr('href') ).offset().top 
+        }, 600);
 		});	
 	});
 	</script>

@@ -1,7 +1,7 @@
 	<footer>
 	<div id="footer-container">
-	<p>Leigh Johnson // Nuwen 2014</p>
-	</div>
+	<p><a href="http://leighjohnson.me">Leigh Johnson</a> // <a href="https://github.com/Nuwen">Nuwen</a> @ Github 2014</p>
+	<p><a href="http://opensource.org/licenses/MIT">MIT License</a> - go ahead and <a href="https://github.com/Nuwen/anchor-theme">fork it</a></div>
 	</footer>
 	</main> <!-- cd-main-content -->
 
@@ -17,7 +17,7 @@
 		</section>
 		<section>
 			<p>Buy Leigh a beer?</p>
-			<button class="icon-mug">Downloa</button>
+			<button class="icon-mug"></button>
 		</section>
 	</div>
 	<nav id="cd-lateral-nav">
@@ -32,7 +32,7 @@
 		</ul> <!-- cd-single-item-wrapper -->
 		<ul class="cd-navigation">
 			<li class="item-has-children">
-				<a href="#0">Articles</a>
+				<a href="#0">Post Categories</a>
 				<ul class="sub-menu">
 					<?php while(categories()): ?>
 							<li>
@@ -45,21 +45,22 @@
 			</li> <!-- item-has-children -->
 
 			<li class="item-has-children">
-				<a href="#0">Affiliates</a>
+				<a href="#0">Made With</a>
 				<ul class="sub-menu">
-					<li><a href="#0">London</a></li>
-					<li><a href="#0">New York</a></li>
-					<li><a href="#0">Milan</a></li>
-					<li><a href="#0">Paris</a></li>
+					<li><a href="http://anchorcms.com/">Anchor CMS</a></li>
+					<li><a href="http://sass-lang.com/">SASS</a></li>
+					<li><a href="http://bourbon.io">Bourbon & Neat</a></li>
+					<li><a href="https://mixitup.kunkalabs.com/">MixItUp</a></li>
+					<li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+					<li><a href="http://girlswhocode.com/">X Chromosomes</a></li>
 				</ul>
 			</li> <!-- item-has-children -->
 		</ul> <!-- cd-navigation -->
 
 		<ul class="cd-navigation cd-single-item-wrapper">
-			<li><a href="#0">Login</a></li>
-			<li><a href="#0">Single item</a></li>
-			<li><a href="#0">Single item</a></li>
-			<li><a href="#0">Single item</a></li>
+			<li><a href="http://leighjohnson.me/donate">Buy Leigh beer</a></li>
+			<li><a href="https://github.com/Nuwen/anchor-theme">Fork Me</a></li>
+			<li><a href="https://github.com/Nuwen/anchor-theme/archive/master.zip">Download</a></li>
 		</ul> <!-- cd-single-item-wrapper -->
 		<div class="cd-navigation socials">
 		<form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">
