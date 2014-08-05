@@ -41,13 +41,13 @@ An AnchorCMS theme for designers, artists, and dreamers.
 2. Log into Anchor CMS admin panel, Extend, Appearance section, set Current Theme to Brag Sheet. 
 3. Create site variables & custom fields
 	1. In the Extend section, select Custom Field. Create a new field with the following options: 
-			Type: post
-			Field: image
-			Unique Key: thumbnail
-			Label: Your choice - I suggest article thumbnail 200x200
-			File types: .png, .gif, .jpg
-			Image max width: 200
-			Image max height: 200
+	*Type: post
+	*Field: image
+	*Unique Key: thumbnail
+	*Label: Your choice - I suggest article thumbnail 200x200
+	*File types: .png, .gif, .jpg
+	*Image max width: 200
+	*Image max height: 200
 
 ### Usage
 1. Icon fonts by [IcoMoon](https://icomoon.io "Icomoon")
