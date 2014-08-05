@@ -62,3 +62,50 @@ An AnchorCMS theme for designers, artists, and dreamers.
 8. `page-portfolio.php` items require the following:
 	* MixItUp target element: `.portfolio-item`
 	* Lightbox caption: `figcaption h2` & `figcaption .fig-description`
+9. To correctly route the POST made on page-contact.php, copy add the following to the bottom of `anchor/routes/site.php` - replace your@email.com with your own email address!:
+
+				// Necessary for form POST on page-contact.php
+				// http://forums.anchorcms.com/discussion/making-a-contact-form
+				Route::post('contact', function() {
+
+			    $input = Input::get(array('contact-subject', 'contact-name', 'contact-email', 'contact-message'));
+
+			    // Validator check...
+			    $validator = new Validator($input);
+
+			    $validator->check('contact-subject')
+			        ->is_max(1, "Subject is required!");
+
+			    $validator->check('contact-name')
+			        ->is_max(2, "Name is required!");
+
+			    $validator->check('contact-email')
+			        ->is_email("Email is required!");
+
+			    $validator->check('contact-message')
+			        ->is_max(5, "Message is empty or too short!");
+
+			    if($errors = $validator->errors()) {
+			        Input::flash();
+			        Notify::error($errors);
+			        return Response::redirect('contact#error');
+			    }
+
+			    $me = "your@email.com"; // Your email address
+			    $subject = $input['contact-subject'];
+			    $message = $input['contact-message'];
+
+			    $header  = "From: " . $input['contact-email'] . " \r\n";
+			    $header .= "Reply-To: " . $input['contact-email'] . " \r\n";
+			    $header .= "Return-Path: " . $input['contact-email'] . "\r\n";
+			    $header .= "X-Mailer: PHP \r\n";
+
+			    if(mail($me, $subject, $message, $header)) {
+			        Notify::success("Email sent!");
+			        return Response::redirect('contact#sent');
+			    } else {
+			        Notify::error("Failed to send email!");
+			        return Response::redirect('contact#failed');
+			    }
+
+				});

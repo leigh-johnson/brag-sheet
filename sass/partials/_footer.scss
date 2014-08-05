@@ -7,12 +7,14 @@ footer {
 		color: $red-orange;
 	} 
 	p {
+		@extend %heading-font;
+		font-weight: 600;
 		display: block;
 		margin: 0 auto;
 		width: 70%;
-		line-height: 120%;
+		line-height: 200%;
 		@include media($mama-bear) {
-			line-height: 100%;
+			line-height: 110%;
 			font-size: 0.8em;
 		}
 	}
@@ -108,9 +110,9 @@ footer {
 
 	a {
 		text-align: center;
-		color: $light-blue-a;
+		color: $red-orange;
 		:hover {
-			color: lighten($light-blue-a, 10%);
+			color: lighten($h1, 10%);
 		}
 	}
 

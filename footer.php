@@ -13,14 +13,14 @@
 		<a href="#"><div class="alert-close icon-cancel"></div></a>
 		<section>	
 			<p>Like this template?</p>
-			<button class="icon-download" href="https://github.com/Nuwen/brag-sheet/archive/master.zip"></button>
+			<a href="https://github.com/Nuwen/brag-sheet/archive/master.zip"><button class="icon-download"></button></a>
 		</section>
 		<section>
 			<p>Buy Leigh a beer?</p>
-			<button class="icon-mug" href="http://leighjohnson.me/donate"></button>
+			<a href="http://leighjohnson.me/donate"><button class="icon-mug"></button></a>
 		</section>
 		<section><p>Get in touch</p>
-		<button class="icon-envelope" href="/contact"></button></section>
+		<a href="<?php echo theme_url("/contact"); ?>"><button class="icon-envelope"></button></a></section>
 	</div>
 	<nav id="cd-lateral-nav">
 		<ul class="cd-navigation cd-single-item-wrapper nav-emphasis">
