@@ -3,6 +3,8 @@
 
 An AnchorCMS theme for designers, artists, and dreamers.
 
+[DEMO](http://sandbox.leighjohnson.me/brick-feed/brag-sheet "Brag Sheet")
+
 ### Features
 * Responsive, mobile-ready 
 * Drawer navigation 
