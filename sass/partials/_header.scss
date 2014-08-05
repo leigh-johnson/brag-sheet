@@ -62,12 +62,12 @@ Main components
 header {
 	@extend %heading-font;
 	position: relative;
-	height: $header-S;
+	height: $header-M;
 	width: 100%;
 	background: $header-bg;
 
-	@include MQ(M) {
-		height: $header-M;
+	@include media($mama-bear) {
+		height: $header-S;
 	}
 }
 
@@ -80,7 +80,7 @@ header {
 		font-size: 3em;
 		color: $h1;
 		float: left;
-		@include media($papa-bear) {
+		@include media($mama-bear) {
 			top: 3px;
 			left: 3px;
 		}
@@ -119,12 +119,8 @@ header {
 		margin: 0.5em;
 	}	
 }
-#cd-logo {
-	@include MQ(M) {
-		//margin: 22px 0 0 30px;
-	}
-}
 
+// These are styles for the top-bar navigation
 #cd-top-nav {
 	text-align: left !important;
 	position: absolute;
@@ -132,8 +128,7 @@ header {
 	right: 120px;
 	height: 100%;
 
-	display: none;
-
+	display: block;
 	ul {
 		height: 100%;
 		padding-top: 18px;
@@ -160,8 +155,8 @@ header {
 		}
 	}
 
-	@include MQ(M) {
-		display: block;
+	@include media($mama-bear) {
+		display: none;
 	}
 }
 

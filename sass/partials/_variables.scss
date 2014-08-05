@@ -23,13 +23,16 @@ $light-blue: rgb(114, 163, 191);
 $light-purple: rgb(114, 115, 191);
 $red-orange: rgba(215,105,89, 0.8);
 
-$light-green-a: rgba(114, 185, 191, .7);
-$light-yellow-a: rgba(191, 186, 114, .7);
+$light-orange-a: rgba(214,146,91, 0.7);
+$dark-blue-a: rgba(13,60,92, 0.8);
+$light-yellow-a: rgba(213,186,93, 0.7);
+$light-beige-a: rgba(209,203,161, 0.7);
 $light-blue-a: rgba(114, 163, 191, .7);
-$light-purple-a: rgba(114, 115, 191, .7);
+
 
 // interactives
 $button-color: $light-blue;
+$button-hover: lighten($light-blue, 10%) !default;
 
 // posts & articles
 $h1: rgba(#fff, 0.8);
@@ -86,7 +89,17 @@ $header-M: 70px;
 
 // footer margin applied to various content containers for push
 $footer-margin: 70px;
-// Some pretty color samples
+
+
+// page-portfolio tones
+$category1: $light-yellow-a;
+$category2: $light-orange-a;
+$category3: $dark-blue-a;
+
+// page-portfolio figures
+$figure-bg: $red-orange;
+
+
 
 
 %vertical-align {

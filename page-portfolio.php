@@ -16,97 +16,92 @@
 	<div id="filter-container">
 			<!-- Filters --> 
 			<button class="filter" data-filter="all">Show All</button>
-			<button class="filter yellow" data-filter=".yellow">Yellow</button>
-			<button class="filter blue" data-filter=".blue">Blue</button>
-			<button class="filter green" data-filter=".green">Green</button>
+			<button class="filter yellow" data-filter=".yellow">UX</button>
+			<button class="filter orange" data-filter=".orange">Design</button>
+			<button class="filter blue" data-filter=".blue">Dev</button>
 	</div>
 	<div id="portfolio-container">
 		<!-- portfolio-items-->
 		<!-- REQUIRED class="portfolio-item" -->
-		<figure class="portfolio-item green ">
+		<figure class="portfolio-item blue ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption>
 			<h2>jelly donut</h2>
-			<p>Toffee tiramisu</p> <a href="#"><button href="http://placehold.it/500x500" caption="Lorem ipsum">Full</button></a></figcaption>
+			<p class="fig-description">If one examines constructivism, one is faced with a choice: either accept constructivist desituationism or conclude that class, perhaps paradoxically, has intrinsic meaning. </p>
+			<p>Toffee tiramisu</p> <a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
+		</figure>
+		<figure class="portfolio-item orange ">
+			<img src="http://placehold.it/225x225"></img>
+			<figcaption><h2>jelly donut</h2>
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>
+			<p>Toffee tiramisu </p><a href="#"><button  href="http://placehold.it/500x500">Full</button></a></figcaption>
+		</figure>
+		<figure class="portfolio-item yellow ">
+			<img src="http://placehold.it/225x225"></img>
+			<figcaption><h2>jelly donut</h2>
+			
+			
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
 		</figure>
 		<figure class="portfolio-item blue ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption><h2>jelly donut</h2>
 			
 			
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
+		</figure>
+		<figure class="portfolio-item orange ">
+			<img src="http://placehold.it/225x225"></img>
+			<figcaption><h2>jelly donut</h2>
 			
-			<p>Toffee tiramisu </p><a href="#"><button  href="http://placehold.it/500x500" caption="A caption">Full</button></a></figcaption>
+			
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>			
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
 		</figure>
 		<figure class="portfolio-item yellow ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption><h2>jelly donut</h2>
 			
-			
-			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
-		</figure>
-		<figure class="portfolio-item green ">
-			<img src="http://placehold.it/225x225"></img>
-			<figcaption><h2>jelly donut</h2>
-			
-			
-			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
 		</figure>
 		<figure class="portfolio-item blue ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption><h2>jelly donut</h2>
 			
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
+		</figure><figure class="portfolio-item orange ">
+			<img src="http://placehold.it/225x225"></img>
+			<figcaption><h2>jelly donut</h2>
 			
 			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>			
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
 		</figure>
 		<figure class="portfolio-item yellow ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption><h2>jelly donut</h2>
 			
-			
-			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
-		</figure>
-		<figure class="portfolio-item green ">
-			<img src="http://placehold.it/225x225"></img>
-			<figcaption><h2>jelly donut</h2>
-			
-			
-			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
-		</figure><figure class="portfolio-item blue ">
-			<img src="http://placehold.it/225x225"></img>
-			<figcaption><h2>jelly donut</h2>
-			
-			
-			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
-		</figure>
-		<figure class="portfolio-item yellow ">
-			<img src="http://placehold.it/225x225"></img>
-			<figcaption><h2>jelly donut</h2>
-			
-			
-			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
-		</figure>
-		<figure class="portfolio-item green ">
-			<img src="http://placehold.it/225x225"></img>
-			<figcaption><h2>jelly donut</h2>
-			
-			
-			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
 		</figure>
 		<figure class="portfolio-item blue ">
 			<img src="http://placehold.it/225x225"></img>
 			<figcaption><h2>jelly donut</h2>
 			
+			<p class="fig-description">It could be said that if subtextual nationalism holds, we have to choose between constructivist desituationism and submodern narrative. The example of constructivism intrinsic to Pynchon’s V emerges again in Mason & Dixon.</p>
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
+		</figure>
+		<figure class="portfolio-item orange ">
+			<img src="http://placehold.it/225x225"></img>
+			<figcaption><h2>jelly donut</h2>
 			
 			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
+			
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
 		</figure>
 		<figure class="portfolio-item yellow ">
 			<img src="http://placehold.it/225x225"></img>
@@ -114,7 +109,7 @@
 			
 			
 			
-			<p>Toffee tiramisu </p><a href="#"><button>Full</button></a></figcaption>
+			<p>Toffee tiramisu </p><a href="#"><button href="http://placehold.it/500x500">Full</button></a></figcaption>
 		</figure>
 
 	</div>
@@ -144,7 +139,7 @@
 			image: {
 				// http://stackoverflow.com/questions/21281263/custom-title-for-magnific-popup
 				titleSrc: function(item) {
-					return item.el.parents('figcaption').find('h2').html() + item.el.parents('figcaption').find('p').html()
+					return item.el.parents('figcaption').find('h2').html() + item.el.parents('figcaption').find('.fig-description').html()
 				}
 			}
 		});

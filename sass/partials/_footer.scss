@@ -10,7 +10,7 @@ footer {
 		display: block;
 		margin: 0 auto;
 		width: 70%;
-		line-height: 100%;
+		line-height: 120%;
 		@include media($mama-bear) {
 			line-height: 100%;
 			font-size: 0.8em;
@@ -102,14 +102,24 @@ footer {
 		text-align: center;
 		color: $h1;
 		font-weight: 600;
-		font-size: 1.5em;
+		font-size: 1.4em;
+		line-height: 100%;
 	}
+
+	a {
+		text-align: center;
+		color: $light-blue-a;
+		:hover {
+			color: lighten($light-blue-a, 10%);
+		}
+	}
+
 	@include media($mama-bear) {
-		height: 35%;
+		height: 55%;
 		width: 100%;
 		border-left: 0px;
 		p{
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 		section {
 			padding: 2px;
@@ -117,7 +127,7 @@ footer {
 		}
 		button {
 			font-size: auto;
-			width: 100%;
+			width: 60%;
 			margin: 0 auto;
 		}
 	}

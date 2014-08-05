@@ -20,11 +20,11 @@
     font-weight: 700;
     font-size: 2em;
     margin: 1em; }
-  #posts-container time, #article-container time {
+  #posts-container time, #posts-container #comments time, #article-container time, #article-container #comments time {
     font-size: 1em;
     font-weight: 700; }
     @media screen and (max-width: 500px) {
-      #posts-container time, #article-container time {
+      #posts-container time, #posts-container #comments time, #article-container time, #article-container #comments time {
         font-weight: 400;
         font-size: 0.8em; } }
   #posts-container .read-time, #article-container .read-time {
@@ -100,9 +100,9 @@
     padding-bottom: 5px; }
     @media screen and (max-width: 500px) {
       #posts-container p, #article-container p {
-        font-size: 1em;
+        font-size: 0.9em;
         padding: 10px;
-        text-align: center !important; } }
+        text-indent: 10px; } }
 
 .pagination {
   font-size: 1.3em;

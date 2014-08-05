@@ -18,7 +18,7 @@
 	 	font-size: 2em;
 	 	margin: 1em;
 	 }
-	time {
+	time, #comments time {
 		font-size: 1em;
 		font-weight: 700;
 		@include media($mama-bear) {
@@ -106,9 +106,9 @@
 		font-size: 1em;
 		@include padding(15px null 5px null);
 		@include media($mama-bear){
-			font-size: 1em;
+			font-size: 0.9em;
 			padding: 10px;
-			text-align: center !important;
+			text-indent: 10px;
 		}
 	}
 	

@@ -100,8 +100,14 @@
     border: rgba(215, 105, 89, 0.8) solid 3px; }
   #comment .name {
     padding-left: 1%; }
+    @media screen and (max-width: 500px) {
+      #comment .name {
+        padding-left: 0; } }
   #comment .email {
     border-left: 0px; }
+    @media screen and (max-width: 500px) {
+      #comment .email {
+        border-left: 3px solid rgba(114, 163, 191, 0.7); } }
   #comment .name, #comment .email {
     float: left;
     width: 50%;
@@ -113,7 +119,7 @@
     @media screen and (max-width: 500px) {
       #comment .name, #comment .email {
         float: none;
-        width: 95%; } }
+        width: 100%; } }
   #comment .textarea label:after {
     content: "";
     display: table;

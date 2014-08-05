@@ -532,12 +532,12 @@ Main components
 
 header {
   position: relative;
-  height: 50px;
+  height: 70px;
   width: 100%;
   background: rgba(114, 163, 191, 0.7); }
-  @media only screen and (min-width: 768px) {
+  @media screen and (max-width: 500px) {
     header {
-      height: 70px; } }
+      height: 50px; } }
 
 header .icon-layout {
   position: absolute;
@@ -546,7 +546,7 @@ header .icon-layout {
   font-size: 3em;
   color: rgba(255, 255, 255, 0.8);
   float: left; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 500px) {
     header .icon-layout {
       top: 3px;
       left: 3px; } }
@@ -588,7 +588,7 @@ header img {
   top: 0;
   right: 120px;
   height: 100%;
-  display: none; }
+  display: block; }
   #cd-top-nav ul {
     height: 100%;
     padding-top: 18px; }
@@ -605,9 +605,9 @@ header img {
       background-color: rgba(13, 60, 92, 0.8); }
     .no-touch #cd-top-nav a:hover {
       color: rgba(255, 255, 255, 0.7); }
-  @media only screen and (min-width: 768px) {
+  @media screen and (max-width: 500px) {
     #cd-top-nav {
-      display: block; } }
+      display: none; } }
 
 #cd-menu-trigger {
   position: absolute;
@@ -820,7 +820,7 @@ footer {
     display: block;
     margin: 0 auto;
     width: 70%;
-    line-height: 100%; }
+    line-height: 120%; }
     @media screen and (max-width: 500px) {
       footer p {
         line-height: 100%;
@@ -891,20 +891,26 @@ footer {
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
-    font-size: 1.5em; }
+    font-size: 1.4em;
+    line-height: 100%; }
+  .alert-bottom a {
+    text-align: center;
+    color: rgba(114, 163, 191, 0.7); }
+    .alert-bottom a :hover {
+      color: rgba(149, 186, 207, 0.7); }
   @media screen and (max-width: 500px) {
     .alert-bottom {
-      height: 35%;
+      height: 55%;
       width: 100%;
       border-left: 0px; }
       .alert-bottom p {
-        font-size: 0.8em; }
+        font-size: 1em; }
       .alert-bottom section {
         padding: 2px;
         margin-top: 10px; }
       .alert-bottom button {
         font-size: auto;
-        width: 100%;
+        width: 60%;
         margin: 0 auto; } }
 
 .alert-close {

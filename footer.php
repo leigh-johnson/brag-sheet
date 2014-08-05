@@ -13,12 +13,14 @@
 		<a href="#"><div class="alert-close icon-cancel"></div></a>
 		<section>	
 			<p>Like this template?</p>
-			<button class="icon-download"></button>
+			<button class="icon-download" href="https://github.com/Nuwen/brag-sheet/archive/master.zip"></button>
 		</section>
 		<section>
 			<p>Buy Leigh a beer?</p>
-			<button class="icon-mug"></button>
+			<button class="icon-mug" href="http://leighjohnson.me/donate"></button>
 		</section>
+		<section><p>Get in touch</p>
+		<button class="icon-envelope" href="/contact"></button></section>
 	</div>
 	<nav id="cd-lateral-nav">
 		<ul class="cd-navigation cd-single-item-wrapper nav-emphasis">
@@ -59,8 +61,8 @@
 
 		<ul class="cd-navigation cd-single-item-wrapper">
 			<li><a href="http://leighjohnson.me/donate">Buy Leigh beer</a></li>
-			<li><a href="https://github.com/Nuwen/anchor-theme">Fork Me</a></li>
-			<li><a href="https://github.com/Nuwen/anchor-theme/archive/master.zip">Download</a></li>
+			<li><a href="https://github.com/Nuwen/brag-sheet">Fork Me</a></li>
+			<li><a href="https://github.com/Nuwen/brag-sheet/archive/master.zip">Download</a></li>
 		</ul> <!-- cd-single-item-wrapper -->
 		<div class="cd-navigation socials">
 		<form id="search" method="post" action="<?php echo search_url(); ?>" class="search"><input type="search" id="term" name="term" placeholder="Type your search..." value="<?php echo search_term(); ?>">

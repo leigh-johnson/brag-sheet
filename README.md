@@ -10,7 +10,6 @@ An AnchorCMS theme for designers, artists, and dreamers.
 * Sophisticated hover effects
 * Rich typography & icon fonts (Icomoo)
 * Mixitup gallery for art, photos, and your wildest visuals: https://mixitup.kunkalabs.com/
-* Publish to social media
 * Unobtrusive sticky footer
 * Joyous UX!
 
@@ -21,6 +20,7 @@ An AnchorCMS theme for designers, artists, and dreamers.
 
 ### Upcoming - pending Anchor 1.0 release
 * Plugin support
+* Publish to social media
 * Pleasing custom palette-picker: http://www.checkman.io/please/ 
 * Per-page & per-article custom fields
 * More page templates/components: price tables, accordion, forms
@@ -59,3 +59,6 @@ An AnchorCMS theme for designers, artists, and dreamers.
 5. Drawer navigation requires all content to be nested between `<main></main>` tags, which open in header.php and close in footer.php. 
 6. Call to action styles are located in _footer.scss & footer.php. Drawer & header styles can be found in _header.scss (although some related markup unexpectedly lives in footer.php, rather than header.php)
 7. `posts.scss` & `posts.php` control the blog roll, likewise `article.scss` & `article.php` control individual post views.
+8. `page-portfolio.php` items require the following:
+	* MixItUp target element: `.portfolio-item`
+	* Lightbox caption: `figcaption h2` & `figcaption .fig-description`

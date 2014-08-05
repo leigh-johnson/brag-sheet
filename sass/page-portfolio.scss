@@ -3,7 +3,10 @@
 @import "partials/variables";
 @import "partials/magnific";
 
-
+// fig-description is a selector for magnificPopup() captions
+.fig-description {
+	display: none;
+}
 
 //Necessary for MixItUp transitions
 
@@ -18,14 +21,17 @@
 
 }
 
+
 .yellow {
-	background: $light-yellow-a;
+	background: $category1;
+
+}
+.orange {
+	background: $category2;
+
 }
 .blue {
-	background: $light-blue-a;
-}
-.green {
-	background: $light-green-a;
+	background: $category3;
 }
 
 #filter-container {
@@ -43,6 +49,15 @@
 		display: inline-block;
 		width: 7em;
 	}
+	.yellow {
+		:hover {background: lighten($category1, 10%);}
+	}
+	.blue {
+		:hover {background: lighten($category3, 10%);}
+	}
+	.orange {
+		:hover {background: lighten($category2, 10%);}
+	}
 }
 
 #portfolio-container {
@@ -52,7 +67,7 @@
 	margin-bottom: $footer-margin+10px;
 	@include clearfix;
 	@include media($baby-bear){
-		width: 50%;
+		width: 100%;
 	}
 }
 
@@ -82,7 +97,7 @@
 		top: 0;
 		left: 0;
 		padding: 20px;
-		background: $red-orange;
+		background: $figure-bg;
 		color: #fff;
 	}
 

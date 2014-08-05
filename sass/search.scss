@@ -1,0 +1,32 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "partials/variables";
+
+
+ul {
+	list-style: none;
+}
+
+.items {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+
+	a {
+		color: $red-orange;
+		:hover {
+			color: lighten($red-orange, 10%);
+		}
+	}
+}
+
+
+.pagination {
+	font-size: 1.3em;
+	font-weight: 700;
+	height: 70px;
+	display: block;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: $footer-margin;
+}

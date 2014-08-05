@@ -69,7 +69,7 @@
 	}
 }
 
-.form-container {
+%form-container {
 	display: block;
 	margin: 0 auto;
 	@include padding(10px, 10px, 10px, 10px );
@@ -81,6 +81,9 @@
 	margin-bottom: $footer-margin+20px;
 
 
+}
+.form-container {
+	@extend %form-container;
 }
 
 #comment {
@@ -122,9 +125,15 @@
 	}
 	.name {
 		padding-left: 1%;
+		@include media($mama-bear){
+			padding-left: 0;
+		}
 	}
 	.email {
 		border-left: 0px;
+		@include media($mama-bear) {
+			border-left: 3px solid $light-blue-a;
+		}
 	}
 	.name, .email {
 		float: left;
@@ -133,7 +142,7 @@
 		@include clearfix;
 		@include media($mama-bear) {
 			float: none;
-			width: 95%;
+			width: 100%;
 		}
 	}
 	.textarea label {

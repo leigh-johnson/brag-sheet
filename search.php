@@ -1,13 +1,15 @@
 <?php theme_include('header'); ?>
-
+<link href="<?php echo theme_url("css/search.css"); ?>" />
 		<?php if(has_search_results()): ?>
 			<ul class="items">
 				<?php $i = 0; while(search_results()): $i++; ?>
-				<li style="background: hsl(215,28%,<?php echo round((($i / posts_per_page()) * 20) + 20); ?>%);">
+				<li>
 					<article class="wrap">
 						<h2>
 							<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 						</h2>
+						<p><?php echo article_description(); ?></p>
+						<p class="time"><?php echo relative_time(article_time()); ?> </p>
 					</article>
 				</li>
 				<?php endwhile; ?>
