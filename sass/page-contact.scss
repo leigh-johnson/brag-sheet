@@ -15,9 +15,14 @@
 		}
 	}
 	input, textarea {
-		border: 3px solid $light-blue-a;
-
+		border: 3px solid $comment-border;
+		:focus {
+			box-shadow: 0 0 10px $comment-focus-border;
+			outline: none !important;
+			border: 3px solid $comment-focus-border;
+		}
 	}
+
 	label {
 		text-align: left;
 	}
@@ -33,18 +38,4 @@
 	color: $error;
 	width: 80%;
 	margin: 0 auto;
-}
-#sent {
-	display: none;
-	width: 100%;
-	background: $dark-blue-a;
-	height: 200px;
-
-}
-
-#failed {
-	display: none;
-	width: 100%;
-	background: $red-orange;
-	height: 200px;
 }
