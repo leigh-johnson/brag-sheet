@@ -58,8 +58,8 @@
 					</article>
 				</section>
 	</div>
-<script src="<?php echo theme_url('js/classie.js'); ?>"></script>
-<script src="<?php echo theme_url('js/Scroller.js'); ?>"></script>
+<script src="<?php echo theme_url('js/classie.min.js'); ?>"></script>
+<script src="<?php echo theme_url('js/scroller.min.js'); ?>"></script>
 <script>
 	new Scroller( document.getElementById( 'so-scroller' ) );
 </script>

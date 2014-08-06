@@ -27,7 +27,7 @@ $light-orange-a: rgba(214,146,91, 0.7);
 $dark-blue-a: rgba(13,60,92, 0.8);
 $light-yellow-a: rgba(213,186,93, 0.7);
 $light-beige-a: rgba(209,203,161, 0.7);
-$light-blue-a: rgba(114, 163, 191, .7);
+$light-blue-a: rgba(114, 163, 191, 0.7);
 
 
 // interactives
@@ -35,11 +35,12 @@ $button-color: $light-blue;
 $button-hover: lighten($light-blue, 10%) !default;
 
 // posts & articles
+$h1-alt: $light-blue;
 $h1: rgba(#fff, 0.8);
 $h1-shadow: rgba(214,146,91, .7);
 $page-h1: $red-orange;
-$article1: rgba(215,105,89, 0.2);
-$article2: rgba(214,146,91, 0.2);
+$article1: rgba(215,105,89, .2);
+$article2: rgba(214,146,91, .2);
 $glass: rgba(225, 225, 225, .5);
 $dark-glass: rgba(225, 225, 225, .7);
 
@@ -48,8 +49,10 @@ $comment-color: #3c3c3c;
 $comment-color-focus: #3498db;
 $comment-focus: #fff;
 $comment-input: $glass;
+$comment-border: $light-blue-a;
 $comment-focus-border: $red-orange;
 $focused: $red-orange;
+
 
 
 // general

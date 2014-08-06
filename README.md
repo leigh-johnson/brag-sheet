@@ -41,20 +41,21 @@ An AnchorCMS theme for designers, artists, and dreamers.
 2. Log into Anchor CMS admin panel, Extend, Appearance section, set Current Theme to Brag Sheet. 
 3. Create site variables & custom fields
 	1. In the Extend section, select Custom Field. Create a new field with the following options: 
-	*Type: post
-	*Field: image
-	*Unique Key: thumbnail
-	*Label: Your choice - I suggest article thumbnail 200x200
-	*File types: .png, .gif, .jpg
-	*Image max width: 200
-	*Image max height: 200
+
+				Type: post
+				Field: image
+				Unique Key: thumbnail
+				Label: Your choice - I suggest article thumbnail 200x200
+				File types: .png, .gif, .jpg
+				Image max width: 200
+				Image max height: 200
 
 ### Usage
 1. Icon fonts by [IcoMoon](https://icomoon.io "Icomoon")
-	1. Download & unzip to brag-sheet/fonts
-	2. Add includes styles.css to _icons.scss 
+	1. Download & unzip `fonts/` to `brag-sheet/fonts`
+	2. Copy icon classes from `style.css` to `/scss/partials/_icons.scss`
 	3. Declare `class="icon-name"` on element in HTML or `content: "\symbol-code"` in SASS. 
-	4. I recommend adding your icons in addition to mine (rather than substituting) if you're not sure what you're doing.
+	4. If you're not sure what you're doing, I recommend adding your icons in addition to mine (rather than substituting).
 2. `screen.scss` contains global imports & styles, which are written to `screen.css`
 3. `page-$name.scss` is the convention for page templates; e.g. page-about.css contains all styles for page-about.php
 4  `_variables.scss` contains style variables. Variable names usually describe styled element e.g. $comment-color, $comment-color-focus, $link, $link-hover.
@@ -64,7 +65,7 @@ An AnchorCMS theme for designers, artists, and dreamers.
 8. `page-portfolio.php` items require the following:
 	* MixItUp target element: `.portfolio-item`
 	* Lightbox caption: `figcaption h2` & `figcaption .fig-description`
-9. To correctly route the POST made on page-contact.php, copy add the following to the bottom of `anchor/routes/site.php` - replace your@email.com with your own email address!:
+9. To correctly route the POST made on page-contact.php, copy add the following to the bottom of `anchor/routes/site.php` - **replace your@email.com with your own email address!**:
 
 				// Necessary for form POST on page-contact.php
 				// http://forums.anchorcms.com/discussion/making-a-contact-form

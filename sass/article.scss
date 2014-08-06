@@ -107,7 +107,7 @@
 		line-height: 22px;
 		background-color: $comment-input;
 		width: 100%;
-		border: 3px solid $light-blue-a;
+		border: 3px solid $comment-border;
 		@include padding(1em 1em 1em 1em);
 		@include box-sizing(border-box);
 
@@ -132,7 +132,7 @@
 	.email {
 		border-left: 0px;
 		@include media($mama-bear) {
-			border-left: 3px solid $light-blue-a;
+			border-left: 3px solid $comment-border;
 		}
 	}
 	.name, .email {

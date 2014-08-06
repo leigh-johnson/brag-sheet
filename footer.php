@@ -75,7 +75,7 @@
 			
 		</div> <!-- socials -->
 	</nav>
-	<script src="<?php echo theme_url('js/navigation.js'); ?>"></script>
+	<script src="<?php echo theme_url('js/navigation.min.js'); ?>"></script>
 
 	<script>
 	$(document).ready(function() {

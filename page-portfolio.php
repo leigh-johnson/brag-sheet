@@ -1,6 +1,6 @@
 <?php theme_include('header'); ?>
 	<link href="<?php echo theme_url('css/page-portfolio.css'); ?>"  rel="stylesheet" media="screen">
-	<script src="<?php echo theme_url('js/jquery.magnific.js'); ?>"></script>
+	<script src="<?php echo theme_url('js/jquery.magnific.min.js'); ?>"></script>
 
 
 
@@ -116,7 +116,7 @@
 
 
 	<!-- init mixitup -->
-	<script src="<?php echo theme_url('js/jquery.mixitup.js'); ?>"></script>
+	<script src="<?php echo theme_url('js/jquery.mixitup.min.js'); ?>"></script>
 	<script type="text/javascript">
 	$(function(){
 		$("#portfolio-container").mixItUp({
