@@ -6,7 +6,7 @@
 				<section class="so-section">
 					<article class="so-side so-side-left">
 						<h2>About You</h2>
-						<p>Does your bio quickly betray your expertise? Is your work accessible on the landing page? Don't bounce browers before they've seen what you can do.</p>
+						<p>Does your bio quickly betray your expertise? Is your work accessible on the landing page? Don't bounce browsers before they've seen what you can do.</p>
 					</article>
 					<figure class="so-side so-side-right">
 						<img src="http://placehold.it/720x480" alt="img01">
