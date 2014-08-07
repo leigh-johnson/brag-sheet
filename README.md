@@ -112,25 +112,3 @@ An AnchorCMS theme for designers, artists, and dreamers.
 			    }
 
 				});
-
-### Optimization
-
-I've made the following optimization decisions. These changes aren't necessary, but I recommend page caching & deflation at minimum. 
-
-* Open `.htaccess` file (should be in the root directory of your Anchor CMS install) and add the following lines:
-
-				## Cache stuff ##
-				<IfModule mod_expires.c>
-					ExpiresActive On
-					ExpiresDefault "access plus 5 days"
-				</IfModule>
-
-				## Compression ##
-				<IfModule mod_deflate.c>
-					<FilesMatch ".(js|css|html|htm|php|xml)$">
-					SetOutputFilter DEFLATE
-					</FilesMatch>
-				</IfModule>	
-
-
-[Read more about mod_expires](http://sarathlal.com/optimize-web-pages-by-leverage-browser-caching/ "mod_expires")

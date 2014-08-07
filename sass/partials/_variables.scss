@@ -73,15 +73,12 @@ $color-3: #59ABE3; // light
 
 // Fonts - Usage: https://github.com/penman/Sass-Web-Fonts
 // Google fonts URL in header.php
-
-
-
 %primary-font {
-	font-family: 'Droid Serif', serif !important;
+	font-family: 'Glegoo', serif !important;
 }
 %heading-font {
 	text-transform: uppercase;
-	font-family: 'Droid Sans', sans-serif !important;
+	font-family: 'Titillium Web', sans-serif !important;
 }
 
 // variables - z-index 
