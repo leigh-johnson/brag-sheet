@@ -21,7 +21,17 @@
 
 }
 
+.yellow-button {
+	background: $category1;
+}
 
+.orange-button {
+	background: $category2;
+}
+
+.blue-button {
+	background: $category3;
+}
 .yellow {
 	border: 6px solid $category1;
 

@@ -16,9 +16,9 @@
 	<div id="filter-container">
 			<!-- Filters --> 
 			<button class="filter" data-filter="all">Show All</button>
-			<button class="filter yellow" data-filter=".yellow">UX</button>
-			<button class="filter orange" data-filter=".orange">Design</button>
-			<button class="filter blue" data-filter=".blue">Dev</button>
+			<button class="filter yellow-button" data-filter=".yellow">UX</button>
+			<button class="filter orange-button" data-filter=".orange">Design</button>
+			<button class="filter blue-button" data-filter=".blue">Dev</button>
 	</div>
 	<div id="portfolio-container">
 		<!-- portfolio-items-->
