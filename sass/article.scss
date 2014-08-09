@@ -72,10 +72,10 @@
 %form-container {
 	display: block;
 	margin: 0 auto;
-	@include padding(10px, 10px, 10px, 10px );
+	@include padding(0px, 0px, 0px, 10px );
 	position: relative;
 	height: auto;
-	width: 95%;
+	width: 100%;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	margin-bottom: $footer-margin+20px;
@@ -95,8 +95,8 @@
 
 	}
 	span {
-		float: left;
-		font-size: 1.2em;
+		text-align: left;
+		font-size: 2em;
 	}
 	.comment-input {
 		display: inline-block;
@@ -155,7 +155,7 @@
 	}
 	.submit button, #show-comments {
 		display: inline-block;
-		width: 30%;
+		width: 10em;
 		bottom: 1em;
 		@include media($mama-bear) {
 			width: 95%;

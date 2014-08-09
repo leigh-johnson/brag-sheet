@@ -64,6 +64,9 @@
 		@include media($mama-bear) {
 			padding: 10px;
 			line-height: 150%;
+		p {
+			text-indent: 3em;
+		}	
 		}
 	}
 
@@ -100,10 +103,9 @@
 			width: 150px;}
 	}
 	p {
-		text-indent: 35px;
 		padding: 20px;
 		font-weight: 500;
-		font-size: 1em;
+		font-size: 0.9em;
 		@include padding(15px null 5px null);
 		@include media($mama-bear){
 			font-size: 0.9em;
